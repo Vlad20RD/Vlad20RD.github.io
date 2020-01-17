@@ -1119,7 +1119,7 @@ header {
       width: 50%;
       display: block;
       padding: 0 15px; }
-      .home_second .section .image img {
+      .home_second .section .image .image_wrapper img {
         height: auto;
         width: 100%; }
 
@@ -2584,6 +2584,7 @@ footer {
     max-width: 100%;
     width: 85%; }
     .home_seventh .section .image {
+      display: block;
       height: auto; }
       .home_seventh .section .image img {
         width: 100%;
