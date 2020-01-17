@@ -1117,8 +1117,10 @@ header {
               background: #53575c; }
     .home_second .section .image {
       width: 50%;
+      display: block;
       padding: 0 15px; }
       .home_second .section .image img {
+        height: auto;
         width: 100%; }
 
 .home_third {
@@ -1387,7 +1389,8 @@ header {
             .home_seventh .section .content div:nth-child(3) a:hover {
               background: #53575c; }
     .home_seventh .section .image {
-      height: 600px; }
+      height: 600px;
+      display: block; }
       .home_seventh .section .image img {
         height: 100%;
         width: auto; }
