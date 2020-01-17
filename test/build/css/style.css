@@ -1122,7 +1122,7 @@ header {
       max-width: 100%;
       vertical-align: top; }
       .home_second .section .image img {
-        height: auto;
+        max-height: 100%;
         width: 100%;
         display: block; }
 
