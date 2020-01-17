@@ -2584,7 +2584,7 @@ footer {
     max-width: 100%;
     width: 85%; }
     .home_seventh .section .image {
-      display: block;
+      display: block !important;
       height: auto; }
       .home_seventh .section .image img {
         width: 100%;
