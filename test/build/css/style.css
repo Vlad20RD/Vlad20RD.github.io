@@ -1123,8 +1123,8 @@ header {
       vertical-align: top; }
       .home_second .section .image img {
         height: auto;
-        max-width: 100%;
-        vertical-align: top; }
+        width: 100%;
+        display: block; }
 
 .home_third {
   background: #282d33;
