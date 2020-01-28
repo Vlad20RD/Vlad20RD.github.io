@@ -944,8 +944,8 @@ body {
             position: relative;
             display: block;
             text-decoration: none;
-            height: 100%;
-            width: auto;
+            height: auto;
+            width: 100%;
             overflow: hidden; }
             .main_section .content .portfolio_section .portfolio_section_wrapper .block1 .block2:hover .text {
               -webkit-transform: translateX(0);
