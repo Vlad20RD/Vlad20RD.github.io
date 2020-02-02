@@ -331,8 +331,41 @@ body {
 a {
   outline: none !important; }
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=devanagari,latin-ext");
+@font-face {
+  font-family: Poppins-Black;
+  src: url("../fonts/poppins/Poppins-Black.ttf"); }
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("../fonts/poppins/Poppins-Bold.ttf"); }
+
+@font-face {
+  font-family: Poppins-ExtraBold;
+  src: url("../fonts/poppins/Poppins-ExtraBold.ttf"); }
+
+@font-face {
+  font-family: Poppins-ExtraLight;
+  src: url("../fonts/poppins/Poppins-ExtraLight.ttf"); }
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url("../fonts/poppins/Poppins-Light.ttf"); }
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("../fonts/poppins/Poppins-Medium.ttf"); }
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("../fonts/poppins/Poppins-Regular.ttf"); }
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url("../fonts/poppins/Poppins-SemiBold.ttf"); }
+
+@font-face {
+  font-family: Poppins-Thin;
+  src: url("../fonts/poppins/Poppins-Thin.ttf"); }
 
 body {
   overflow: hidden; }
@@ -390,8 +423,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
-  font-family: 'Poppins', sans-serif; }
+  height: 100%; }
   .main_section .header {
     width: 380px;
     height: 100%;
@@ -503,14 +535,13 @@ body {
       .main_section .header .menu ul {
         padding-left: 75px; }
         .main_section .header .menu ul li a {
-          font-family: 'Poppins', sans-serif;
           position: relative;
           color: white;
           text-decoration: none;
           padding: 4px 0;
           font-size: 28px;
           line-height: 54px;
-          font-weight: 700;
+          font-family: Poppins-Bold;
           z-index: 1; }
           .main_section .header .menu ul li a:before {
             position: absolute;
@@ -581,16 +612,15 @@ body {
         align-items: center;
         width: 100%;
         position: relative;
-        font-family: 'Poppins', sans-serif;
         font-size: 15px; }
         .main_section .header .wrapper .current_page .current_num {
           padding-right: 10px;
           color: #f37b83;
-          font-weight: 900;
+          font-family: Poppins-Bold;
           width: 15px; }
         .main_section .header .wrapper .current_page .total_pages_num {
           padding-left: 9px;
-          font-weight: 700; }
+          font-family: Poppins-Bold; }
         .main_section .header .wrapper .current_page .current_line {
           width: 100px;
           height: 3px;
@@ -602,7 +632,7 @@ body {
       .main_section .header .wrapper .my_info_wrapper {
         padding-top: 110px;
         padding-right: 20px;
-        font-family: 'Poppins', sans-serif; }
+        font-family: Poppins-Regular; }
         .main_section .header .wrapper .my_info_wrapper .my_info {
           margin-bottom: 30px; }
           .main_section .header .wrapper .my_info_wrapper .my_info.signature {
@@ -614,27 +644,27 @@ body {
           .main_section .header .wrapper .my_info_wrapper .my_info div:nth-child(1) {
             font-size: 12px;
             line-height: 12px;
-            font-weight: 300;
+            font-family: Poppins-Regular;
             color: #f37b83;
             letter-spacing: 5px;
             text-transform: uppercase; }
           .main_section .header .wrapper .my_info_wrapper .my_info div:nth-child(2) {
             font-size: 15px;
             line-height: 30px;
-            font-weight: 400; }
+            font-family: Poppins-Regular; }
       .main_section .header .wrapper .current_page_big {
         position: absolute;
         width: 380px;
         left: 0;
         bottom: 30px;
         z-index: 1;
-        font-family: 'Poppins', sans-serif; }
+        font-family: Poppins-Regular; }
         .main_section .header .wrapper .current_page_big .current {
           font-size: 160px;
           padding-left: 75px;
           color: transparent;
           -webkit-text-stroke: 3px #f37b83;
-          font-weight: 800; }
+          font-family: Poppins-Bold; }
         .main_section .header .wrapper .current_page_big .icon_scroll {
           position: absolute;
           width: 38px;
@@ -689,7 +719,7 @@ body {
     top: 50px;
     opacity: 0; } }
   .main_section .content {
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins-Regular;
     width: calc(100% - 380px);
     margin-left: 380px;
     height: 100%;
@@ -722,12 +752,12 @@ body {
           .main_section .content .home_section .left_section .left_section_wrapper div:nth-child(2) {
             font-size: 100px;
             line-height: 94px;
-            font-weight: 800;
+            font-family: Poppins-Black;
             color: #f37b83;
             margin-bottom: 60px; }
           .main_section .content .home_section .left_section .left_section_wrapper div:nth-child(3) {
             line-height: 30px;
-            font-weight: 400;
+            font-family: Poppins-Regular;
             color: #a8858f;
             margin-bottom: 100px; }
           .main_section .content .home_section .left_section .left_section_wrapper div:nth-child(4) ul {
@@ -797,12 +827,12 @@ body {
                 font-size: 28px;
                 line-height: 42px;
                 color: #f37b83;
-                font-weight: 700;
+                font-family: Poppins-Bold;
                 margin: 20px 0; }
               .main_section .content .services_section .services_section_wrapper .left_section .block1 .block2 div:nth-child(3) {
                 font-size: 15px;
                 line-height: 30px;
-                font-weight: 300;
+                font-family: Poppins-Regular;
                 color: #a8858f; }
         .main_section .content .services_section .services_section_wrapper .right_section {
           width: 38%;
@@ -811,32 +841,32 @@ body {
             font-size: 30px;
             margin-bottom: 30px;
             padding-bottom: 20px;
-            font-weight: 700;
+            font-family: Poppins-Bold;
             color: #f37b83; }
           .main_section .content .services_section .services_section_wrapper .right_section div:nth-child(2) {
             font-size: 22px;
             line-height: 35px;
             margin-bottom: 35px;
-            font-weight: 400;
+            font-family: Poppins-Regular;
             color: #a8858f; }
           .main_section .content .services_section .services_section_wrapper .right_section div:nth-child(3) {
             margin-bottom: 30px;
             font-size: 15px;
             line-height: 30px;
-            font-weight: 300;
+            font-family: Poppins-Regular;
             color: #a8858f; }
           .main_section .content .services_section .services_section_wrapper .right_section div:nth-child(4) {
             font-size: 15px;
             line-height: 30px;
             margin-bottom: 50px;
-            font-weight: 300;
+            font-family: Poppins-Regular;
             color: #a8858f; }
           .main_section .content .services_section .services_section_wrapper .right_section div:nth-child(5) a {
             display: inline-block;
             text-decoration: none;
             color: white;
             font-size: 15px;
-            font-weight: 500;
+            font-family: Poppins-Medium;
             border: 2px solid #f37b83;
             padding: 20px 38px;
             border-radius: 50px;
@@ -932,7 +962,7 @@ body {
               -ms-user-select: none;
               user-select: none; }
               .main_section .content .portfolio_section .portfolio_section_wrapper .filters .filters_item .button.active {
-                font-weight: 700;
+                font-family: Poppins-Bold;
                 color: #f37b83; }
         .main_section .content .portfolio_section .portfolio_section_wrapper .block1 {
           width: calc(100%/3);
@@ -977,7 +1007,7 @@ body {
                   color: white; }
                   .main_section .content .portfolio_section .portfolio_section_wrapper .block1 .block2 .text .text_wrapper div:nth-child(1) {
                     font-size: 28px;
-                    font-weight: 700;
+                    font-family: Poppins-Bold;
                     margin-bottom: 0;
                     padding-bottom: 5px; }
                   .main_section .content .portfolio_section .portfolio_section_wrapper .block1 .block2 .text .text_wrapper div:nth-child(2) {
@@ -1012,7 +1042,7 @@ body {
             font-size: 30px;
             margin-bottom: 30px;
             padding-bottom: 20px;
-            font-weight: 700;
+            font-family: Poppins-Bold;
             color: #f37b83; }
           .main_section .content .resume_section .resume_section_wrapper .left_section ul {
             padding: 0 0 0 55px; }
@@ -1076,7 +1106,7 @@ body {
                 color: #a8858f;
                 -webkit-transition: .3s;
                 transition: .3s;
-                font-weight: 300;
+                font-family: Poppins-Regular;
                 font-size: 15px; }
               .main_section .content .resume_section .resume_section_wrapper .left_section ul li .year {
                 position: absolute;
@@ -1084,7 +1114,7 @@ body {
                 top: 10px;
                 -webkit-transition: .3s;
                 transition: .3s;
-                font-weight: 700;
+                font-family: Poppins-Bold;
                 color: #f37b83; }
         .main_section .content .resume_section .resume_section_wrapper .right_section {
           width: 40%; }
@@ -1092,31 +1122,31 @@ body {
             font-size: 30px;
             margin-bottom: 30px;
             padding-bottom: 20px;
-            font-weight: 700;
+            font-family: Poppins-Bold;
             color: #f37b83; }
           .main_section .content .resume_section .resume_section_wrapper .right_section div:nth-child(2) {
             font-size: 22px;
             line-height: 35px;
             margin-bottom: 35px;
-            font-weight: 400;
+            font-family: Poppins-Regular;
             color: #a8858f; }
           .main_section .content .resume_section .resume_section_wrapper .right_section div:nth-child(3) {
             margin-bottom: 30px;
             font-size: 15px;
             line-height: 30px;
-            font-weight: 400;
+            font-family: Poppins-Regular;
             color: #a8858f; }
           .main_section .content .resume_section .resume_section_wrapper .right_section div:nth-child(4) {
             font-size: 15px;
             line-height: 30px;
             margin-bottom: 30px;
-            font-weight: 400;
+            font-family: Poppins-Regular;
             color: #a8858f; }
           .main_section .content .resume_section .resume_section_wrapper .right_section div:nth-child(5) {
             font-size: 15px;
             line-height: 30px;
             margin-bottom: 50px;
-            font-weight: 400;
+            font-family: Poppins-Regular;
             color: #a8858f; }
           .main_section .content .resume_section .resume_section_wrapper .right_section div:nth-child(6) {
             width: 215px; }
@@ -1130,7 +1160,7 @@ body {
         .main_section .content .skills_section .skills_section_wrapper .title {
           font-size: 30px;
           padding-bottom: 10px;
-          font-weight: 700;
+          font-family: Poppins-Bold;
           color: #f37b83; }
         .main_section .content .skills_section .skills_section_wrapper .skills_circle {
           margin-bottom: 80px;
@@ -1164,7 +1194,7 @@ body {
               -webkit-transform: translate(-50%, -50%) scale(-1, 1);
               transform: translate(-50%, -50%) scale(-1, 1);
               font-size: 45px;
-              font-weight: 700;
+              font-family: Poppins-Bold;
               color: white;
               letter-spacing: -1px; }
         .main_section .content .skills_section .skills_section_wrapper .skills_line {
@@ -1192,7 +1222,7 @@ body {
                 right: -30px;
                 top: 0;
                 font-size: 45px;
-                font-weight: 700;
+                font-family: Poppins-Bold;
                 color: white;
                 letter-spacing: -1px; }
               .main_section .content .skills_section .skills_section_wrapper .skills_line .left_section .skillbar .skillbar-bar {
@@ -1227,7 +1257,7 @@ body {
                 right: -30px;
                 top: 0;
                 font-size: 45px;
-                font-weight: 700;
+                font-family: Poppins-Bold;
                 color: white;
                 letter-spacing: -1px; }
               .main_section .content .skills_section .skills_section_wrapper .skills_line .right_section .skillbar .skillbar-bar {
@@ -1252,36 +1282,36 @@ body {
             font-size: 30px;
             margin-bottom: 40px;
             padding-bottom: 20px;
-            font-weight: 700;
+            font-family: Poppins-Bold;
             color: #f37b83; }
           .main_section .content .contact_section .contact_section_wrapper .left_section div:nth-child(2) {
             font-size: 22px;
             line-height: 35px;
             margin-bottom: 35px;
-            font-weight: 400;
+            font-family: Poppins-Regular;
             color: #a8858f; }
           .main_section .content .contact_section .contact_section_wrapper .left_section div:nth-child(3) {
             margin-bottom: 30px;
             font-size: 15px;
             line-height: 30px;
-            font-weight: 300;
+            font-family: Poppins-Regular;
             color: #a8858f; }
           .main_section .content .contact_section .contact_section_wrapper .left_section div:nth-child(4) {
             font-size: 15px;
             line-height: 30px;
             margin-bottom: 50px;
-            font-weight: 300;
+            font-family: Poppins-Regular;
             color: #a8858f; }
           .main_section .content .contact_section .contact_section_wrapper .left_section div:nth-child(5) div {
             margin-bottom: 30px;
             font-size: 15px;
-            font-weight: 300;
+            font-family: Poppins-Regular;
             color: #a8858f;
             line-height: 0;
             padding: 0; }
             .main_section .content .contact_section .contact_section_wrapper .left_section div:nth-child(5) div span {
               padding-right: 6px;
-              font-weight: 500; }
+              font-family: Poppins-Medium; }
         .main_section .content .contact_section .contact_section_wrapper .right_section {
           width: 55%;
           margin-left: 5%; }
@@ -1305,7 +1335,7 @@ body {
               margin: 0 0 35px 0 !important;
               height: 30px;
               font-size: 14px;
-              font-family: 'Poppins', sans-serif;
+              font-family: Poppins-Regular;
               width: 100%;
               line-height: 25px;
               background: transparent;
@@ -1327,7 +1357,7 @@ body {
               padding-bottom: 13px;
               margin: 0 0 40px 0;
               font-size: 14px;
-              font-family: 'Poppins', sans-serif;
+              font-family: Poppins-Regular;
               width: 100%;
               line-height: 25px;
               background: transparent;
@@ -1361,8 +1391,7 @@ body {
               text-decoration: none;
               background: transparent;
               color: white;
-              font-family: 'Poppins', sans-serif;
-              font-weight: 700;
+              font-family: Poppins-Bold;
               width: 100%;
               letter-spacing: 8px;
               -webkit-transition: .3s;
