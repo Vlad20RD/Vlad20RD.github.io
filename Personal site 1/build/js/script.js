@@ -152,7 +152,7 @@ $(document).ready(function () {
 
 /*____________________________counters___________________________________*/
 
-
+/*
 $(window).ready(function () {
     $(window).on("scroll load resize", function () {
         var counter = 1;
@@ -211,25 +211,9 @@ $(window).ready(function () {
         $(bigCount).html(counter);
     });
 });
-
-
-
-
-
-
-/*__________________активный пункт меню_____________________________*/
-/*
-$(function () {
-    $('.menu ul li a').each(function () {
-        var location = window.location.href;
-        var link = this.href;
-        if(location == link) {
-            $(this).addClass('active');
-        }
-    });
-});
-
 */
+
+
 
 /*______________________________прелоадер______________________________*/
 
