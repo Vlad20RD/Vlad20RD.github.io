@@ -366,9 +366,9 @@ a {
 @font-face {
   font-family: Poppins-Thin;
   src: url("../fonts/poppins/Poppins-Thin.ttf"); }
-
+/*
 body {
-  overflow: hidden; }
+  overflow: hidden; }*/
 
 .preloader {
   position: fixed;
