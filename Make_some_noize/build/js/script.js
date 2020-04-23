@@ -45,10 +45,8 @@ $(document).ready(function(){
         loop: true,
         dots: false,
         nav: true,
-        autoplay: true,
-        autoplayTimeout: 8000,
+        autoplay: false,
         smartSpeed: 700,
-        autoplayHoverPause: true,
         navText : ["<img src='build/img/icons/arrow_white.png'>","<img src='build/img/icons/arrow_white.png'>"],
         touchDrag: false,
         mouseDrag: false,
@@ -60,10 +58,10 @@ $(document).ready(function(){
                 items:2
             },
             992:{
-                items:2
+                items:4
             },
             1200:{
-                items:3
+                items:4
             },
             1650:{
                 items:4
