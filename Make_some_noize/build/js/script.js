@@ -29,8 +29,8 @@ $(document).ready(function(){
         loop: true,
         dots: false,
         nav: true,
-        autoplay: false,
-        autoplayTimeout: 7000,
+        autoplay: true,
+        autoplayTimeout: 6000,
         smartSpeed: 700,
         autoplayHoverPause: true,
         navText : ["<img src='build/img/icons/arrow_white.png'>","<img src='build/img/icons/arrow_white.png'>"],
@@ -45,8 +45,8 @@ $(document).ready(function(){
         loop: true,
         dots: false,
         nav: true,
-        autoplay: false,
-        autoplayTimeout: 7000,
+        autoplay: true,
+        autoplayTimeout: 8000,
         smartSpeed: 700,
         autoplayHoverPause: true,
         navText : ["<img src='build/img/icons/arrow_white.png'>","<img src='build/img/icons/arrow_white.png'>"],
@@ -316,7 +316,7 @@ $(document).ready(function(){
 /*________________________________counter________________________________*/
 
 for ( let i of document.querySelectorAll(".number_stat") ) {
-    
+
     let numberTop = i.getBoundingClientRect().top,
         start = +i.innerHTML,
         end = +i.dataset.max;
