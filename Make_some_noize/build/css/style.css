@@ -680,79 +680,7 @@ body {
     margin: 0 auto;
     margin-top: 120px;
     overflow: hidden;
-    max-width: 1800px;
-    /*.lesson_categories{
-      display: flex;
-      justify-content: center;
-      color: $white;
-      text-align: center;
-
-      .lesson_section{
-        width: 315px;
-        display: flex;
-        flex-direction: column;
-        margin: 0 50px;
-
-        .icon{
-          position: relative;
-          background: $black;
-          height: 270px;
-          width: 270px;
-          border-radius: 50%;
-          margin: 0 auto;
-          overflow: hidden;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          transition: .3s;
-
-          &:before{
-            position: absolute;
-            content: '';
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            opacity: 0;
-            transition: .3s;
-            background: linear-gradient(135deg, rgba(116,34,230,1) 0%, rgba(219,121,160,1) 100%);
-          }
-
-          &:hover{
-            &:before{
-              opacity: 1;
-            }
-
-            img{
-              width: 105%;
-              height: 105%;
-            }
-          }
-
-          img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: .3s;
-            z-index: 2;
-          }
-        }
-
-        .lesson_title{
-          margin-top: 40px;
-          line-height: 40px;
-          font-size: 34px;
-          height: 200px;
-        }
-
-        .link{
-          margin-top: 40px;
-          a{
-            font-size: 34px;
-            color: $white;
-          }
-        }
-      }
-    }*/ }
+    max-width: 1800px; }
     body .lessons .title {
       margin: 0 auto;
       text-align: center;
@@ -762,7 +690,6 @@ body {
     body .lessons .lesson_slider {
       width: 90%;
       margin: 0 auto;
-      margin-top: 60px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -806,15 +733,13 @@ body {
             margin: 0 36px;
             text-align: center;
             color: white;
-            padding-bottom: 10px; }
+            padding-bottom: 10px;
+            padding-top: 30px; }
             body .lessons .lesson_slider #slider3 .slide .lesson_section .icon {
-              position: relative;
-              background: black;
               height: 270px;
               width: 270px;
               border-radius: 50%;
               margin: 0 auto;
-              overflow: hidden;
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex;
@@ -823,32 +748,54 @@ body {
               justify-content: center;
               -webkit-box-align: center;
               -ms-flex-align: center;
-              align-items: center;
-              -webkit-transition: .3s;
-              transition: .3s; }
-              body .lessons .lesson_slider #slider3 .slide .lesson_section .icon:before {
-                position: absolute;
-                content: '';
-                width: 100%;
-                height: 100%;
-                z-index: 1;
-                opacity: 0;
+              align-items: center; }
+              body .lessons .lesson_slider #slider3 .slide .lesson_section .icon:hover .icon_section {
+                width: 95%;
+                height: 95%;
+                -webkit-box-shadow: 0 0 30px #7322E6;
+                box-shadow: 0 0 30px #7322E6; }
+                body .lessons .lesson_slider #slider3 .slide .lesson_section .icon:hover .icon_section:before {
+                  opacity: 1; }
+                body .lessons .lesson_slider #slider3 .slide .lesson_section .icon:hover .icon_section img {
+                  width: 105%;
+                  height: 105%; }
+              body .lessons .lesson_slider #slider3 .slide .lesson_section .icon .icon_section {
+                width: 90%;
+                height: 90%;
+                background: black;
+                border-radius: 50%;
+                position: relative;
+                overflow: hidden;
                 -webkit-transition: .3s;
                 transition: .3s;
-                background: linear-gradient(135deg, #7422e6 0%, #db79a0 100%); }
-              body .lessons .lesson_slider #slider3 .slide .lesson_section .icon:hover:before {
-                opacity: 1; }
-              body .lessons .lesson_slider #slider3 .slide .lesson_section .icon:hover img {
-                width: 105%;
-                height: 105%; }
-              body .lessons .lesson_slider #slider3 .slide .lesson_section .icon img {
-                width: 100%;
-                height: 100%;
-                -o-object-fit: cover;
-                object-fit: cover;
-                -webkit-transition: .3s;
-                transition: .3s;
-                z-index: 2; }
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center; }
+                body .lessons .lesson_slider #slider3 .slide .lesson_section .icon .icon_section:before {
+                  position: absolute;
+                  content: '';
+                  width: 100%;
+                  height: 100%;
+                  z-index: 1;
+                  opacity: 0;
+                  -webkit-transition: .3s;
+                  transition: .3s;
+                  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #7322e6), to(#f38e8e));
+                  background: linear-gradient(180deg, #7322e6 30%, #f38e8e 100%); }
+                body .lessons .lesson_slider #slider3 .slide .lesson_section .icon .icon_section img {
+                  width: 100%;
+                  height: 100%;
+                  -o-object-fit: cover;
+                  object-fit: cover;
+                  -webkit-transition: .3s;
+                  transition: .3s;
+                  z-index: 2; }
             body .lessons .lesson_slider #slider3 .slide .lesson_section .lesson_title {
               margin-top: 40px;
               line-height: 40px;
@@ -1038,8 +985,8 @@ body {
           height: auto; }
           body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .photo {
             margin: 0 auto;
-            width: 250px;
-            height: 250px;
+            width: 220px;
+            height: 220px;
             border-radius: 50%;
             overflow: hidden;
             border: 4px solid white; }
@@ -1060,16 +1007,16 @@ body {
               -webkit-box-pack: center;
               -ms-flex-pack: center;
               justify-content: center;
-              font-size: 50px; }
+              font-size: 40px; }
               body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .name_and_surname .name {
                 margin-right: 17px; }
             body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .age {
               margin-top: 14px;
-              font-size: 30px; }
+              font-size: 26px; }
               body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .age span:nth-child(2) {
                 margin: 0 10px; }
             body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .skills {
-              font-size: 36px;
+              font-size: 30px;
               margin-top: 14px;
               padding-bottom: 40px; }
           body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer {
@@ -1173,34 +1120,6 @@ body {
                 font-size: 20px;
                 color: white;
                 font-family: Furore; }
-          body .participants .participants_slider .slick-list .slick-track .slide .participants_section .messengers {
-            margin-top: 20px; }
-            body .participants .participants_slider .slick-list .slick-track .slide .participants_section .messengers ul {
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: flex;
-              -webkit-box-pack: end;
-              -ms-flex-pack: end;
-              justify-content: flex-end; }
-              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .messengers ul li a {
-                font-size: 24px;
-                color: white;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                margin: 0 5px;
-                padding: 4px;
-                height: 35px;
-                width: 35px;
-                border: 3px solid white;
-                border-radius: 50%;
-                text-decoration: none; }
   body .how_is_training {
     margin-top: 80px; }
     body .how_is_training .title {
@@ -1222,8 +1141,6 @@ body {
         max-width: 300px;
         margin: 0 60px;
         position: relative; }
-        body .how_is_training .sequence .step:hover .number {
-          color: #671ecf; }
         body .how_is_training .sequence .step:before {
           content: '';
           position: absolute;
@@ -1234,14 +1151,11 @@ body {
           top: 115px; }
         body .how_is_training .sequence .step:last-child:before {
           display: none; }
-        body .how_is_training .sequence .step .number {
-          margin: 0 auto;
+        body .how_is_training .sequence .step .icon {
           height: 230px;
-          width: 240px;
-          background: white;
-          color: black;
-          font-size: 130px;
+          width: 230px;
           border-radius: 50%;
+          margin: 0 auto;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -1250,13 +1164,46 @@ body {
           justify-content: center;
           -webkit-box-align: center;
           -ms-flex-align: center;
-          align-items: center;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none;
-          -webkit-transition: .3s;
-          transition: .3s; }
+          align-items: center; }
+          body .how_is_training .sequence .step .icon:hover .icon_section:before {
+            opacity: 1; }
+          body .how_is_training .sequence .step .icon .icon_section {
+            width: 100%;
+            height: 100%;
+            background: black;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            -webkit-transition: .3s;
+            transition: .3s;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            body .how_is_training .sequence .step .icon .icon_section:before {
+              position: absolute;
+              content: '';
+              width: 100%;
+              height: 100%;
+              z-index: 1;
+              opacity: 0;
+              -webkit-transition: .3s;
+              transition: .3s;
+              background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #7322e6), to(#f38e8e));
+              background: linear-gradient(180deg, #7322e6 30%, #f38e8e 100%); }
+            body .how_is_training .sequence .step .icon .icon_section img {
+              width: 100%;
+              height: 100%;
+              -o-object-fit: cover;
+              object-fit: cover;
+              -webkit-transition: .3s;
+              transition: .3s;
+              z-index: 2; }
         body .how_is_training .sequence .step .text {
           text-align: center;
           color: white;
@@ -1493,7 +1440,7 @@ body {
     display: -ms-flexbox;
     display: flex; }
   body .modal {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -1512,15 +1459,13 @@ body {
       display: -ms-flexbox;
       display: flex; }
     body .modal .section_modal {
-      position: relative; }
-      body .modal .section_modal .close_modal {
-        position: absolute;
-        color: white;
-        font-size: 40px;
-        right: 30px;
-        top: 20px;
-        cursor: pointer;
-        z-index: 1; }
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
       body .modal .section_modal .training_program {
         color: white;
         height: auto;
@@ -1529,10 +1474,19 @@ body {
         background: linear-gradient(135deg, rgba(116, 34, 230, 0.4) 0%, rgba(219, 121, 160, 0.4) 100%);
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        border-radius: 35px;
+        border-radius: 50px;
         position: relative;
         padding: 20px 30px;
-        width: 800px; }
+        max-width: 800px;
+        width: 100%; }
+        body .modal .section_modal .training_program .close_modal {
+          position: absolute;
+          color: white;
+          font-size: 30px;
+          right: 25px;
+          top: 15px;
+          cursor: pointer;
+          z-index: 1; }
         body .modal .section_modal .training_program .title {
           font-size: 30px;
           text-align: center;
@@ -1655,10 +1609,19 @@ body {
         background: linear-gradient(135deg, rgba(116, 34, 230, 0.4) 0%, rgba(219, 121, 160, 0.4) 100%);
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        border-radius: 35px;
+        border-radius: 50px;
         position: relative;
         padding: 40px 60px;
-        width: 800px; }
+        max-width: 800px;
+        width: 100%; }
+        body .modal .section_modal .request .close_modal {
+          position: absolute;
+          color: white;
+          font-size: 30px;
+          right: 25px;
+          top: 15px;
+          cursor: pointer;
+          z-index: 1; }
         body .modal .section_modal .request .title {
           font-size: 40px;
           text-align: center;
@@ -1737,10 +1700,19 @@ body {
         background: linear-gradient(135deg, rgba(116, 34, 230, 0.4) 0%, rgba(219, 121, 160, 0.4) 100%);
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        border-radius: 35px;
+        border-radius: 50px;
         position: relative;
         padding: 40px 60px;
-        width: 500px; }
+        max-width: 500px;
+        width: 100%; }
+        body .modal .section_modal .work_examples .close_modal {
+          position: absolute;
+          color: white;
+          font-size: 30px;
+          right: 25px;
+          top: 15px;
+          cursor: pointer;
+          z-index: 1; }
         body .modal .section_modal .work_examples .title {
           font-size: 26px;
           text-align: center;
@@ -1878,10 +1850,20 @@ body {
         background: linear-gradient(135deg, rgba(116, 34, 230, 0.4) 0%, rgba(219, 121, 160, 0.4) 100%);
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        border-radius: 60px;
+        border-radius: 50px;
         position: relative;
-        width: 700px;
+        max-width: 700px;
+        width: 100%;
         padding-bottom: 40px; }
+        body .modal .section_modal .payment_on_time .close_modal {
+          position: absolute;
+          color: white;
+          font-size: 30px;
+          right: 25px;
+          top: 15px;
+          cursor: pointer;
+          z-index: 1;
+          text-shadow: 0 0 5px black; }
         body .modal .section_modal .payment_on_time .image {
           overflow: hidden;
           height: 100px;
@@ -2428,10 +2410,9 @@ body {
       width: 100px;
       right: -109px;
       top: 95px; }
-    body .how_is_training .sequence .step .number {
+    body .how_is_training .sequence .step .icon {
       height: 188px;
-      width: 188px;
-      font-size: 100px; }
+      width: 188px; }
     body .how_is_training .sequence .step .text {
       font-size: 22px;
       line-height: 30px; }
@@ -2530,6 +2511,198 @@ body {
           body footer .row:nth-child(1) .section:nth-child(2) .politics div {
             font-size: 16px;
             margin-top: 12px; }
+  body .modal .section_modal .request {
+    padding: 30px 50px; }
+    body .modal .section_modal .request .title {
+      font-size: 30px;
+      text-align: center;
+      margin: 0 auto;
+      line-height: 34px; }
+    body .modal .section_modal .request form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 80%;
+      margin: 40px auto 20px auto;
+      color: white; }
+      body .modal .section_modal .request form .text {
+        margin-bottom: 30px;
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid white;
+        font-size: 18px;
+        color: white;
+        font-family: Furore; }
+        body .modal .section_modal .request form .text::-webkit-input-placeholder {
+          color: white;
+          font-family: Furore; }
+        body .modal .section_modal .request form .text::-moz-placeholder {
+          color: white;
+          font-family: Furore; }
+        body .modal .section_modal .request form .text:-ms-input-placeholder {
+          color: white;
+          font-family: Furore; }
+        body .modal .section_modal .request form .text::-ms-input-placeholder {
+          color: white;
+          font-family: Furore; }
+        body .modal .section_modal .request form .text::placeholder {
+          color: white;
+          font-family: Furore; }
+      body .modal .section_modal .request form .textarea {
+        width: 100%;
+        margin-bottom: 20px; }
+        body .modal .section_modal .request form .textarea div {
+          margin-bottom: 10px;
+          font-size: 18px; }
+        body .modal .section_modal .request form .textarea textarea {
+          resize: none;
+          width: 100%;
+          height: 90px;
+          border-radius: 15px;
+          border: none;
+          padding: 15px;
+          background: rgba(255, 255, 255, 0.3);
+          color: white;
+          font-size: 18px; }
+      body .modal .section_modal .request form .btn {
+        font-size: 20px;
+        width: auto;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 30px 35px; }
+  body .modal .section_modal .work_examples .title {
+    font-size: 26px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px; }
+  body .modal .section_modal .work_examples .audioplayer_window {
+    margin-top: 10px;
+    width: 100%; }
+    body .modal .section_modal .work_examples .audioplayer_window .jp-audio {
+      width: 100%;
+      border: none;
+      background: transparent;
+      /*название*/ }
+      body .modal .section_modal .work_examples .audioplayer_window .jp-audio:last-child .jp-type-single {
+        /*звук*/ }
+        body .modal .section_modal .work_examples .audioplayer_window .jp-audio:last-child .jp-type-single .jp-volume-controls {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+      body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single {
+        /*таймер*/
+        /*звук*/ }
+        body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface {
+          background: transparent; }
+          body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 40px; }
+            body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-controls, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-controls {
+              background: transparent;
+              width: 120px;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center; }
+              body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-controls .jp-play, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-controls .jp-play {
+                display: block; }
+              body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-controls .jp-stop, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-controls .jp-stop {
+                display: none; }
+            body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress {
+              width: 100%;
+              background: none;
+              height: 6px; }
+              body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress .jp-seek-bar, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress .jp-seek-bar {
+                width: 100%;
+                background: white; }
+                body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress .jp-seek-bar .jp-play-bar, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress .jp-seek-bar .jp-play-bar {
+                  background: #671ecf; }
+            body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-toggles, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-toggles {
+              display: none !important; }
+        body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .timers_aud {
+          height: 20px;
+          margin-left: 98px;
+          max-width: 100%; }
+          body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .timers_aud .jp-current-time, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .timers_aud .jp-duration {
+            font-size: 14px;
+            color: white;
+            font-family: Furore; }
+        body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-volume-controls {
+          width: 100%;
+          display: none;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-volume-controls .jp-mute {
+            color: white; }
+          body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-volume-controls .jp-volume-max {
+            display: none !important; }
+          body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-volume-controls .vol_fa_ico {
+            margin-right: 10px;
+            color: white; }
+          body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar {
+            background: white;
+            padding: 0;
+            position: relative;
+            height: 3px;
+            width: 100px;
+            overflow: visible; }
+            body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar .jp-volume-bar-value {
+              background: #671ecf;
+              position: relative;
+              height: 100%; }
+              body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar .jp-volume-bar-value:before {
+                position: absolute;
+                content: '';
+                background: white;
+                width: 5px;
+                height: 5px;
+                border: 3px solid #671ecf;
+                display: block;
+                right: -5px;
+                top: 50%;
+                border-radius: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                z-index: 1; }
+      body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-details {
+        font-size: 20px;
+        color: white;
+        font-family: Furore; }
+  body .modal .section_modal .work_examples .btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 15px; }
+    body .modal .section_modal .work_examples .btn button {
+      border: none;
+      position: relative;
+      z-index: 1;
+      font-family: Furore;
+      border: none;
+      font-size: 18px;
+      color: white;
+      padding: 20px 30px;
+      letter-spacing: 2px;
+      background: -webkit-gradient(linear, left top, right top, from(#7422e6), to(#db79a0));
+      background: linear-gradient(90deg, #7422e6 0%, #db79a0 100%);
+      border-radius: 50px; }
   body .pattern1 {
     background-size: cover; }
   body .pattern2 {
@@ -2709,7 +2882,8 @@ body {
       padding: 0 10%;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      font-size: 50px; }
+      font-size: 50px;
+      margin-bottom: 50px; }
     body .lessons .lesson_slider {
       width: 90%; }
       body .lessons .lesson_slider #slider3 .owl-nav {
@@ -2955,10 +3129,9 @@ body {
       width: 80px;
       right: -80px;
       top: 60px; }
-    body .how_is_training .sequence .step .number {
+    body .how_is_training .sequence .step .icon {
       height: 120px;
-      width: 120px;
-      font-size: 70px; }
+      width: 120px; }
     body .how_is_training .sequence .step .text {
       font-size: 20px;
       line-height: 30px; }
@@ -3478,10 +3651,9 @@ body {
       right: -47px;
       top: 52px;
       height: 3px; }
-    body .how_is_training .sequence .step .number {
+    body .how_is_training .sequence .step .icon {
       height: 100px;
-      width: 100px;
-      font-size: 60px; }
+      width: 100px; }
     body .how_is_training .sequence .step .text {
       font-size: 16px;
       line-height: 20px; }
@@ -3586,125 +3758,65 @@ body {
       font-size: 16px; }
       body footer .row:nth-child(2) span {
         font-size: 18px; }
-  body #modal {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: auto;
-    background: rgba(0, 0, 0, 0.9);
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    z-index: 100;
-    display: none; }
-    body #modal .section_modal {
-      position: relative;
-      width: 100%;
-      height: 100%; }
-      body #modal .section_modal .close_modal {
-        font-size: 30px;
-        right: 35px;
-        top: 10px; }
-      body #modal .section_modal .training_program {
-        border-radius: 0;
-        position: relative;
-        padding: 20px;
-        width: 100%;
-        height: 100%; }
-      body #modal .section_modal .request {
-        border-radius: 0;
-        position: relative;
-        padding: 20px;
-        width: 100%;
-        height: 100%; }
-        body #modal .section_modal .request .title {
-          font-size: 20px;
-          text-align: center;
-          margin: 0 auto;
-          line-height: 22px;
-          margin-top: 30px; }
-        body #modal .section_modal .request form {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-          width: 80%;
-          margin: 40px auto 20px auto;
-          color: white; }
-          body #modal .section_modal .request form .text {
-            margin-bottom: 40px;
-            width: 100%;
-            background: transparent;
-            border: none;
-            border-bottom: 2px solid white;
-            font-size: 18px;
-            color: white;
-            font-family: Furore; }
-            body #modal .section_modal .request form .text::-webkit-input-placeholder {
-              color: white;
-              font-family: Furore; }
-            body #modal .section_modal .request form .text::-moz-placeholder {
-              color: white;
-              font-family: Furore; }
-            body #modal .section_modal .request form .text:-ms-input-placeholder {
-              color: white;
-              font-family: Furore; }
-            body #modal .section_modal .request form .text::-ms-input-placeholder {
-              color: white;
-              font-family: Furore; }
-            body #modal .section_modal .request form .text::placeholder {
-              color: white;
-              font-family: Furore; }
-          body #modal .section_modal .request form .textarea {
-            width: 100%;
-            margin-bottom: 30px; }
-            body #modal .section_modal .request form .textarea div {
-              margin-bottom: 15px;
+  body .modal .section_modal {
+    width: 90%; }
+    body .modal .section_modal .training_program {
+      padding: 20px 30px; }
+      body .modal .section_modal .training_program .title {
+        font-size: 24px;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 26px; }
+      body .modal .section_modal .training_program .programs .description {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%; }
+        body .modal .section_modal .training_program .programs .description .program {
+          padding: 0 25px; }
+          body .modal .section_modal .training_program .programs .description .program div {
+            margin: 14px auto;
+            font-size: 14px; }
+            body .modal .section_modal .training_program .programs .description .program div span {
+              width: 5px;
+              height: 5px; }
+            body .modal .section_modal .training_program .programs .description .program div:nth-child(1) {
+              width: 80px;
+              height: 80px;
+              font-size: 16px; }
+            body .modal .section_modal .training_program .programs .description .program div:nth-child(2) {
               font-size: 18px; }
-            body #modal .section_modal .request form .textarea textarea {
-              resize: none;
-              width: 100%;
-              height: 100px;
-              border-radius: 15px;
-              border: none;
-              padding: 15px;
-              background: rgba(255, 255, 255, 0.3);
-              color: white;
-              font-size: 18px;
-              font-family: Furore; }
-          body #modal .section_modal .request form .btn {
-            margin-top: 10px;
-            border: none;
-            position: relative;
-            z-index: 1;
-            font-family: Furore;
-            border: none;
-            font-size: 20px;
-            color: white;
-            width: 100%;
-            padding: 15px 0;
-            letter-spacing: 2px;
-            background: -webkit-gradient(linear, left top, right top, from(#7422e6), to(#db79a0));
-            background: linear-gradient(90deg, #7422e6 0%, #db79a0 100%);
-            border-radius: 25px; }
-      body #modal .section_modal .work_examples {
-        border-radius: 0;
-        position: relative;
-        padding: 20px;
-        width: 100%;
-        height: 100%; }
-      body #modal .section_modal .payment_on_time {
-        border-radius: 0;
-        position: relative;
-        padding: 20px;
-        width: 100%;
-        height: 100%; } }
+      body .modal .section_modal .training_program .programs .buttons_and_price .section {
+        padding: 0 25px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section:nth-child(2) .btn {
+          margin-top: 10px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section div:nth-child(1) a {
+          color: white;
+          font-size: 16px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section div:nth-child(2) {
+          margin-top: 15px;
+          font-size: 18px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section .two {
+          font-size: 7px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section .btn {
+          margin-top: 15px; }
+          body .modal .section_modal .training_program .programs .buttons_and_price .section .btn button {
+            font-size: 10px;
+            padding: 12px 0; }
+      body .modal .section_modal .training_program .programs .btn {
+        margin-top: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        body .modal .section_modal .training_program .programs .btn button {
+          font-size: 13px;
+          padding: 15px 30px; } }
 
 @media (max-width: 768px) {
   body .msg_fixed {
@@ -3798,7 +3910,8 @@ body {
     margin-top: 100px;
     width: 100%; }
     body .lessons .title {
-      font-size: 35px; }
+      font-size: 35px;
+      margin-bottom: 30px; }
     body .lessons .lesson_slider {
       width: 75%; }
       body .lessons .lesson_slider #slider3 .owl-nav .owl-prev {
@@ -4145,10 +4258,9 @@ body {
         right: -27px;
         top: 40px;
         height: 3px; }
-      body .how_is_training .sequence .step .number {
+      body .how_is_training .sequence .step .icon {
         height: 80px;
-        width: 80px;
-        font-size: 40px; }
+        width: 80px; }
       body .how_is_training .sequence .step .text {
         font-size: 14px;
         line-height: 20px; }
@@ -4251,7 +4363,296 @@ body {
       padding-bottom: 40px;
       font-size: 16px; }
       body footer .row:nth-child(2) span {
-        font-size: 18px; } }
+        font-size: 18px; }
+  body .modal .section_modal .training_program {
+    padding: 20px 30px; }
+    body .modal .section_modal .training_program .title {
+      font-size: 24px;
+      text-align: center;
+      margin: 0 auto;
+      line-height: 26px; }
+    body .modal .section_modal .training_program .programs .description {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%; }
+      body .modal .section_modal .training_program .programs .description .program {
+        padding: 0 25px; }
+        body .modal .section_modal .training_program .programs .description .program div {
+          margin: 14px auto;
+          font-size: 14px; }
+          body .modal .section_modal .training_program .programs .description .program div span {
+            width: 5px;
+            height: 5px; }
+          body .modal .section_modal .training_program .programs .description .program div:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            font-size: 16px; }
+          body .modal .section_modal .training_program .programs .description .program div:nth-child(2) {
+            font-size: 18px; }
+    body .modal .section_modal .training_program .programs .buttons_and_price .section {
+      padding: 0 25px; }
+      body .modal .section_modal .training_program .programs .buttons_and_price .section:nth-child(2) .btn {
+        margin-top: 10px; }
+      body .modal .section_modal .training_program .programs .buttons_and_price .section div:nth-child(1) a {
+        color: white;
+        font-size: 16px; }
+      body .modal .section_modal .training_program .programs .buttons_and_price .section div:nth-child(2) {
+        margin-top: 15px;
+        font-size: 18px; }
+      body .modal .section_modal .training_program .programs .buttons_and_price .section .two {
+        font-size: 7px; }
+      body .modal .section_modal .training_program .programs .buttons_and_price .section .btn {
+        margin-top: 15px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section .btn button {
+          font-size: 10px;
+          padding: 12px 0; }
+    body .modal .section_modal .training_program .programs .btn {
+      margin-top: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      body .modal .section_modal .training_program .programs .btn button {
+        font-size: 13px;
+        padding: 15px 30px; }
+  body .modal .section_modal .request {
+    padding: 30px 50px; }
+    body .modal .section_modal .request .title {
+      width: 80%;
+      font-size: 24px;
+      text-align: center;
+      margin: 0 auto;
+      line-height: 30px; }
+    body .modal .section_modal .request form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 80%;
+      margin: 40px auto 20px auto;
+      color: white; }
+      body .modal .section_modal .request form .text {
+        margin-bottom: 20px;
+        font-size: 16px; }
+      body .modal .section_modal .request form .textarea {
+        margin-bottom: 16px; }
+        body .modal .section_modal .request form .textarea div {
+          margin-bottom: 10px;
+          font-size: 16px; }
+        body .modal .section_modal .request form .textarea textarea {
+          resize: none;
+          width: 100%;
+          height: 84px;
+          padding: 15px;
+          font-size: 16px; }
+      body .modal .section_modal .request form .btn {
+        font-size: 16px;
+        margin-top: 10px;
+        padding: 20px 25px; }
+  body .modal .section_modal .work_examples .title {
+    width: 80%;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 30px; }
+  body .modal .section_modal .work_examples .audioplayer_window {
+    margin-top: 10px;
+    width: 100%; }
+    body .modal .section_modal .work_examples .audioplayer_window .jp-audio {
+      width: 100%;
+      border: none;
+      background: transparent;
+      /*название*/ }
+      body .modal .section_modal .work_examples .audioplayer_window .jp-audio:last-child .jp-type-single {
+        /*звук*/ }
+        body .modal .section_modal .work_examples .audioplayer_window .jp-audio:last-child .jp-type-single .jp-volume-controls {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+      body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single {
+        /*таймер*/
+        /*звук*/ }
+        body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface {
+          background: transparent; }
+          body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 40px; }
+            body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-controls, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-controls {
+              background: transparent;
+              width: 120px;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center; }
+              body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-controls .jp-play, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-controls .jp-play {
+                display: block; }
+              body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-controls .jp-stop, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-controls .jp-stop {
+                display: none; }
+            body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress {
+              width: 100%;
+              background: none;
+              height: 6px; }
+              body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress .jp-seek-bar, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress .jp-seek-bar {
+                width: 100%;
+                background: white; }
+                body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress .jp-seek-bar .jp-play-bar, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress .jp-seek-bar .jp-play-bar {
+                  background: #671ecf; }
+            body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-toggles, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-toggles {
+              display: none !important; }
+        body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .timers_aud {
+          height: 20px;
+          margin-left: 98px;
+          max-width: 100%; }
+          body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .timers_aud .jp-current-time, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .timers_aud .jp-duration {
+            font-size: 14px;
+            color: white;
+            font-family: Furore; }
+        body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-volume-controls {
+          width: 100%;
+          display: none;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-volume-controls .jp-mute {
+            color: white; }
+          body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-volume-controls .jp-volume-max {
+            display: none !important; }
+          body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-volume-controls .vol_fa_ico {
+            margin-right: 10px;
+            color: white; }
+          body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar {
+            background: white;
+            padding: 0;
+            position: relative;
+            height: 3px;
+            width: 100px;
+            overflow: visible; }
+            body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar .jp-volume-bar-value {
+              background: #671ecf;
+              position: relative;
+              height: 100%; }
+              body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar .jp-volume-bar-value:before {
+                position: absolute;
+                content: '';
+                background: white;
+                width: 5px;
+                height: 5px;
+                border: 3px solid #671ecf;
+                display: block;
+                right: -5px;
+                top: 50%;
+                border-radius: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                z-index: 1; }
+      body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-details {
+        font-size: 20px;
+        color: white;
+        font-family: Furore; }
+  body .modal .section_modal .work_examples .btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 15px; }
+    body .modal .section_modal .work_examples .btn button {
+      border: none;
+      position: relative;
+      z-index: 1;
+      font-family: Furore;
+      border: none;
+      font-size: 18px;
+      color: white;
+      padding: 20px 30px;
+      letter-spacing: 2px;
+      background: -webkit-gradient(linear, left top, right top, from(#7422e6), to(#db79a0));
+      background: linear-gradient(90deg, #7422e6 0%, #db79a0 100%);
+      border-radius: 50px; }
+  body .modal .section_modal .payment_on_time .text {
+    font-size: 20px;
+    padding: 30px 50px;
+    line-height: 24px; }
+  body .modal .section_modal .payment_on_time .btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    body .modal .section_modal .payment_on_time .btn button {
+      font-size: 16px;
+      padding: 20px 30px; } }
+
+@media (max-width: 620px) {
+  body .modal .section_modal {
+    width: 95%; }
+    body .modal .section_modal .training_program {
+      padding: 15px; }
+      body .modal .section_modal .training_program .title {
+        font-size: 18px;
+        line-height: 20px;
+        width: 80%; }
+      body .modal .section_modal .training_program .programs .description {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%; }
+        body .modal .section_modal .training_program .programs .description .program {
+          padding: 0 15px; }
+          body .modal .section_modal .training_program .programs .description .program div {
+            margin: 14px auto;
+            font-size: 10px; }
+            body .modal .section_modal .training_program .programs .description .program div span {
+              width: 5px;
+              height: 5px; }
+            body .modal .section_modal .training_program .programs .description .program div:nth-child(1) {
+              width: 60px;
+              height: 60px;
+              font-size: 13px; }
+            body .modal .section_modal .training_program .programs .description .program div:nth-child(2) {
+              font-size: 13px; }
+      body .modal .section_modal .training_program .programs .buttons_and_price .section {
+        padding: 0 10px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section:nth-child(2) .btn {
+          margin-top: 10px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section div:nth-child(1) a {
+          color: white;
+          font-size: 12px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section div:nth-child(2) {
+          margin-top: 5px;
+          font-size: 14px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section .two {
+          margin-top: 4px;
+          font-size: 6px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section .btn {
+          margin-top: 10px; }
+          body .modal .section_modal .training_program .programs .buttons_and_price .section .btn button {
+            font-size: 8px;
+            padding: 10px 0; }
+      body .modal .section_modal .training_program .programs .btn {
+        margin-top: 15px; }
+        body .modal .section_modal .training_program .programs .btn button {
+          font-size: 12px;
+          padding: 10px 20px; } }
 
 @media (max-width: 576px) {
   body .msg_fixed {
@@ -4386,11 +4787,11 @@ body {
       body .lessons .lesson_slider #slider3 .owl-nav .owl-prev {
         left: -30px;
         height: 40px;
-        top: 20%; }
+        top: 45%; }
       body .lessons .lesson_slider #slider3 .owl-nav .owl-next {
         right: -30px;
         height: 40px;
-        top: 20%; }
+        top: 45%; }
       body .lessons .lesson_slider #slider3 .slide {
         width: 100%;
         max-width: 100%; }
@@ -4406,7 +4807,7 @@ body {
             font-size: 18px;
             line-height: 20px;
             height: 70px;
-            margin-top: 10px; }
+            margin-top: 15px; }
           body .lessons .lesson_slider #slider3 .slide .lesson_section .link {
             margin: 0 auto;
             font-size: 22px;
@@ -4748,10 +5149,9 @@ body {
         right: -17px;
         top: 25px;
         height: 3px; }
-      body .how_is_training .sequence .step .number {
+      body .how_is_training .sequence .step .icon {
         height: 55px;
-        width: 55px;
-        font-size: 30px; }
+        width: 55px; }
       body .how_is_training .sequence .step .text {
         font-size: 9px;
         line-height: 10px; }
@@ -4873,4 +5273,499 @@ body {
         padding-bottom: 40px;
         font-size: 14px; }
         body footer .row:nth-child(2) span {
-          font-size: 16px; } }
+          font-size: 16px; }
+  body .modal .section_modal .request {
+    padding: 15px 30px; }
+    body .modal .section_modal .request .title {
+      font-size: 14px;
+      line-height: 18px; }
+    body .modal .section_modal .request form {
+      margin: 20px auto 15px auto;
+      width: 100%; }
+      body .modal .section_modal .request form .text {
+        margin-bottom: 15px;
+        font-size: 10px; }
+      body .modal .section_modal .request form .textarea {
+        margin-bottom: 16px; }
+        body .modal .section_modal .request form .textarea div {
+          margin-bottom: 6px;
+          font-size: 10px; }
+        body .modal .section_modal .request form .textarea textarea {
+          resize: none;
+          width: 100%;
+          height: 60px;
+          padding: 8px;
+          font-size: 10px; }
+      body .modal .section_modal .request form .btn {
+        font-size: 10px;
+        margin-top: 10px;
+        padding: 10px 15px; }
+  body .modal .section_modal .payment_on_time .image {
+    height: 70px; }
+  body .modal .section_modal .payment_on_time .text {
+    font-size: 16px;
+    padding: 25px 40px;
+    line-height: 20px; }
+  body .modal .section_modal .payment_on_time .btn {
+    width: 100%; }
+    body .modal .section_modal .payment_on_time .btn button {
+      font-size: 12px;
+      padding: 15px 25px; } }
+
+@media (max-width: 430px) {
+  body .modal .section_modal {
+    width: 97%; }
+    body .modal .section_modal .training_program {
+      padding: 10px; }
+      body .modal .section_modal .training_program .title {
+        font-size: 12px;
+        line-height: 14px;
+        width: 80%; }
+      body .modal .section_modal .training_program .programs .description {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%; }
+        body .modal .section_modal .training_program .programs .description .program {
+          padding: 0 15px; }
+          body .modal .section_modal .training_program .programs .description .program div {
+            margin: 8px auto;
+            font-size: 8px; }
+            body .modal .section_modal .training_program .programs .description .program div span {
+              width: 4px;
+              height: 4px; }
+            body .modal .section_modal .training_program .programs .description .program div:nth-child(1) {
+              width: 50px;
+              height: 50px;
+              font-size: 10px; }
+            body .modal .section_modal .training_program .programs .description .program div:nth-child(2) {
+              font-size: 10px; }
+      body .modal .section_modal .training_program .programs .buttons_and_price .section {
+        padding: 0 10px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section:nth-child(2) .btn {
+          margin-top: 10px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section div:nth-child(1) a {
+          color: white;
+          font-size: 10px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section div:nth-child(2) {
+          margin-top: 5px;
+          font-size: 12px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section .two {
+          margin-top: 4px;
+          font-size: 6px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section .btn {
+          margin-top: 10px; }
+          body .modal .section_modal .training_program .programs .buttons_and_price .section .btn button {
+            font-size: 7px;
+            padding: 10px 5px; }
+      body .modal .section_modal .training_program .programs .btn {
+        margin-top: 15px; }
+        body .modal .section_modal .training_program .programs .btn button {
+          font-size: 12px;
+          padding: 10px 20px; } }
+
+@media (max-height: 900px) {
+  body .modal .section_modal {
+    width: 90%; }
+    body .modal .section_modal .training_program {
+      padding: 20px 30px; }
+      body .modal .section_modal .training_program .title {
+        font-size: 24px;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 26px; }
+      body .modal .section_modal .training_program .programs .description {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%; }
+        body .modal .section_modal .training_program .programs .description .program {
+          padding: 0 25px; }
+          body .modal .section_modal .training_program .programs .description .program div {
+            margin: 14px auto;
+            font-size: 14px; }
+            body .modal .section_modal .training_program .programs .description .program div span {
+              width: 5px;
+              height: 5px; }
+            body .modal .section_modal .training_program .programs .description .program div:nth-child(1) {
+              width: 80px;
+              height: 80px;
+              font-size: 16px; }
+            body .modal .section_modal .training_program .programs .description .program div:nth-child(2) {
+              font-size: 18px; }
+      body .modal .section_modal .training_program .programs .buttons_and_price .section {
+        padding: 0 25px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section:nth-child(2) .btn {
+          margin-top: 10px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section div:nth-child(1) a {
+          color: white;
+          font-size: 16px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section div:nth-child(2) {
+          margin-top: 15px;
+          font-size: 18px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section .two {
+          font-size: 7px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section .btn {
+          margin-top: 15px; }
+          body .modal .section_modal .training_program .programs .buttons_and_price .section .btn button {
+            font-size: 10px;
+            padding: 12px 0; }
+      body .modal .section_modal .training_program .programs .btn {
+        margin-top: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        body .modal .section_modal .training_program .programs .btn button {
+          font-size: 13px;
+          padding: 15px 30px; } }
+
+@media (max-height: 768px) {
+  body .home .home_section {
+    width: 100%; }
+    body .home .home_section div:nth-child(1) {
+      font-size: 45px;
+      line-height: 50px; }
+    body .home .home_section div:nth-child(2) {
+      font-size: 90px;
+      line-height: 120px; }
+    body .home .home_section div:nth-child(3) {
+      font-size: 45px;
+      line-height: 50px; }
+  body .home .btn_home {
+    position: absolute;
+    bottom: 30px; }
+    body .home .btn_home .btn-pulse {
+      font-size: 18px;
+      padding: 20px 30px; }
+  body .modal .section_modal .training_program {
+    padding: 20px 30px; }
+    body .modal .section_modal .training_program .title {
+      font-size: 24px;
+      text-align: center;
+      margin: 0 auto;
+      line-height: 26px; }
+    body .modal .section_modal .training_program .programs .description {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%; }
+      body .modal .section_modal .training_program .programs .description .program {
+        padding: 0 25px; }
+        body .modal .section_modal .training_program .programs .description .program div {
+          margin: 14px auto;
+          font-size: 14px; }
+          body .modal .section_modal .training_program .programs .description .program div span {
+            width: 5px;
+            height: 5px; }
+          body .modal .section_modal .training_program .programs .description .program div:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            font-size: 16px; }
+          body .modal .section_modal .training_program .programs .description .program div:nth-child(2) {
+            font-size: 18px; }
+    body .modal .section_modal .training_program .programs .buttons_and_price .section {
+      padding: 0 25px; }
+      body .modal .section_modal .training_program .programs .buttons_and_price .section:nth-child(2) .btn {
+        margin-top: 10px; }
+      body .modal .section_modal .training_program .programs .buttons_and_price .section div:nth-child(1) a {
+        color: white;
+        font-size: 16px; }
+      body .modal .section_modal .training_program .programs .buttons_and_price .section div:nth-child(2) {
+        margin-top: 15px;
+        font-size: 18px; }
+      body .modal .section_modal .training_program .programs .buttons_and_price .section .two {
+        font-size: 7px; }
+      body .modal .section_modal .training_program .programs .buttons_and_price .section .btn {
+        margin-top: 15px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section .btn button {
+          font-size: 10px;
+          padding: 12px 0; }
+    body .modal .section_modal .training_program .programs .btn {
+      margin-top: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      body .modal .section_modal .training_program .programs .btn button {
+        font-size: 13px;
+        padding: 15px 30px; }
+  body .modal .section_modal .request {
+    padding: 30px 50px; }
+    body .modal .section_modal .request .title {
+      width: 80%;
+      font-size: 24px;
+      text-align: center;
+      margin: 0 auto;
+      line-height: 30px; }
+    body .modal .section_modal .request form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 80%;
+      margin: 40px auto 20px auto;
+      color: white; }
+      body .modal .section_modal .request form .text {
+        margin-bottom: 20px;
+        font-size: 16px; }
+      body .modal .section_modal .request form .textarea {
+        margin-bottom: 16px; }
+        body .modal .section_modal .request form .textarea div {
+          margin-bottom: 10px;
+          font-size: 16px; }
+        body .modal .section_modal .request form .textarea textarea {
+          resize: none;
+          width: 100%;
+          height: 84px;
+          padding: 15px;
+          font-size: 16px; }
+      body .modal .section_modal .request form .btn {
+        font-size: 16px;
+        margin-top: 10px;
+        padding: 20px 25px; }
+  body .modal .section_modal .work_examples .title {
+    width: 80%;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 30px; }
+  body .modal .section_modal .work_examples .audioplayer_window {
+    margin-top: 10px;
+    width: 100%; }
+    body .modal .section_modal .work_examples .audioplayer_window .jp-audio {
+      width: 100%;
+      border: none;
+      background: transparent;
+      /*название*/ }
+      body .modal .section_modal .work_examples .audioplayer_window .jp-audio:last-child .jp-type-single {
+        /*звук*/ }
+        body .modal .section_modal .work_examples .audioplayer_window .jp-audio:last-child .jp-type-single .jp-volume-controls {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+      body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single {
+        /*таймер*/
+        /*звук*/ }
+        body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface {
+          background: transparent; }
+          body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 40px; }
+            body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-controls, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-controls {
+              background: transparent;
+              width: 120px;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center; }
+              body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-controls .jp-play, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-controls .jp-play {
+                display: block; }
+              body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-controls .jp-stop, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-controls .jp-stop {
+                display: none; }
+            body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress {
+              width: 100%;
+              background: none;
+              height: 6px; }
+              body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress .jp-seek-bar, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress .jp-seek-bar {
+                width: 100%;
+                background: white; }
+                body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress .jp-seek-bar .jp-play-bar, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress .jp-seek-bar .jp-play-bar {
+                  background: #671ecf; }
+            body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-toggles, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-toggles {
+              display: none !important; }
+        body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .timers_aud {
+          height: 20px;
+          margin-left: 98px;
+          max-width: 100%; }
+          body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .timers_aud .jp-current-time, body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .timers_aud .jp-duration {
+            font-size: 14px;
+            color: white;
+            font-family: Furore; }
+        body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-volume-controls {
+          width: 100%;
+          display: none;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-volume-controls .jp-mute {
+            color: white; }
+          body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-volume-controls .jp-volume-max {
+            display: none !important; }
+          body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-volume-controls .vol_fa_ico {
+            margin-right: 10px;
+            color: white; }
+          body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar {
+            background: white;
+            padding: 0;
+            position: relative;
+            height: 3px;
+            width: 100px;
+            overflow: visible; }
+            body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar .jp-volume-bar-value {
+              background: #671ecf;
+              position: relative;
+              height: 100%; }
+              body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar .jp-volume-bar-value:before {
+                position: absolute;
+                content: '';
+                background: white;
+                width: 5px;
+                height: 5px;
+                border: 3px solid #671ecf;
+                display: block;
+                right: -5px;
+                top: 50%;
+                border-radius: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                z-index: 1; }
+      body .modal .section_modal .work_examples .audioplayer_window .jp-audio .jp-details {
+        font-size: 20px;
+        color: white;
+        font-family: Furore; }
+  body .modal .section_modal .work_examples .btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 15px; }
+    body .modal .section_modal .work_examples .btn button {
+      border: none;
+      position: relative;
+      z-index: 1;
+      font-family: Furore;
+      border: none;
+      font-size: 18px;
+      color: white;
+      padding: 20px 30px;
+      letter-spacing: 2px;
+      background: -webkit-gradient(linear, left top, right top, from(#7422e6), to(#db79a0));
+      background: linear-gradient(90deg, #7422e6 0%, #db79a0 100%);
+      border-radius: 50px; }
+  body .modal .section_modal .payment_on_time .text {
+    font-size: 20px;
+    padding: 30px 50px;
+    line-height: 24px; }
+  body .modal .section_modal .payment_on_time .btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    body .modal .section_modal .payment_on_time .btn button {
+      font-size: 16px;
+      padding: 20px 30px; } }
+
+@media (max-height: 600px) {
+  body .modal .section_modal {
+    width: 95%; }
+    body .modal .section_modal .training_program {
+      padding: 15px; }
+      body .modal .section_modal .training_program .title {
+        font-size: 18px;
+        line-height: 20px;
+        width: 80%; }
+      body .modal .section_modal .training_program .programs .description {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%; }
+        body .modal .section_modal .training_program .programs .description .program {
+          padding: 0 15px; }
+          body .modal .section_modal .training_program .programs .description .program div {
+            margin: 14px auto;
+            font-size: 10px; }
+            body .modal .section_modal .training_program .programs .description .program div span {
+              width: 5px;
+              height: 5px; }
+            body .modal .section_modal .training_program .programs .description .program div:nth-child(1) {
+              width: 60px;
+              height: 60px;
+              font-size: 13px; }
+            body .modal .section_modal .training_program .programs .description .program div:nth-child(2) {
+              font-size: 13px; }
+      body .modal .section_modal .training_program .programs .buttons_and_price .section {
+        padding: 0 10px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section:nth-child(2) .btn {
+          margin-top: 10px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section div:nth-child(1) a {
+          color: white;
+          font-size: 12px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section div:nth-child(2) {
+          margin-top: 5px;
+          font-size: 14px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section .two {
+          margin-top: 4px;
+          font-size: 6px; }
+        body .modal .section_modal .training_program .programs .buttons_and_price .section .btn {
+          margin-top: 10px; }
+          body .modal .section_modal .training_program .programs .buttons_and_price .section .btn button {
+            font-size: 8px;
+            padding: 10px 0; }
+      body .modal .section_modal .training_program .programs .btn {
+        margin-top: 15px; }
+        body .modal .section_modal .training_program .programs .btn button {
+          font-size: 12px;
+          padding: 10px 20px; }
+    body .modal .section_modal .payment_on_time .image {
+      height: 70px; }
+    body .modal .section_modal .payment_on_time .text {
+      font-size: 16px;
+      padding: 25px 40px;
+      line-height: 20px; }
+    body .modal .section_modal .payment_on_time .btn {
+      width: 100%; }
+      body .modal .section_modal .payment_on_time .btn button {
+        font-size: 12px;
+        padding: 15px 25px; }
+    body .modal .section_modal .request {
+      padding: 15px 30px; }
+      body .modal .section_modal .request .title {
+        font-size: 14px;
+        line-height: 18px; }
+      body .modal .section_modal .request form {
+        margin: 20px auto 15px auto;
+        width: 100%; }
+        body .modal .section_modal .request form .text {
+          margin-bottom: 15px;
+          font-size: 10px; }
+        body .modal .section_modal .request form .textarea {
+          margin-bottom: 16px; }
+          body .modal .section_modal .request form .textarea div {
+            margin-bottom: 6px;
+            font-size: 10px; }
+          body .modal .section_modal .request form .textarea textarea {
+            resize: none;
+            width: 100%;
+            height: 60px;
+            padding: 8px;
+            font-size: 10px; }
+        body .modal .section_modal .request form .btn {
+          font-size: 10px;
+          margin-top: 10px;
+          padding: 10px 15px; } }
