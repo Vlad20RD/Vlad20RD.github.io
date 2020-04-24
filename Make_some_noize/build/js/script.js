@@ -313,24 +313,38 @@ $(document).ready(function(){
 
 /*________________________________counter________________________________*/
 
-for ( let i of document.querySelectorAll(".number_stat") ) {
 
-    let numberTop = i.getBoundingClientRect().top,
-        start = +i.innerHTML,
-        end = +i.dataset.max;
+$(document).ready(function () {
 
-    window.addEventListener('scroll', function onScroll() {
-        if(window.pageYOffset > numberTop - window.innerHeight / 2) {
-            this.removeEventListener('scroll', onScroll);
-            let interval = this.setInterval(function() {
-                i.innerHTML = ++start;
-                if(start == end) {
-                    clearInterval(interval);
-                }
-            }, 25);
+    var show = true;
+    var countbox = ".teacher_statistics .statistics";
+    $(window).on("scroll load resize", function () {
+        if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+        var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+        var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+        var w_height = $(window).height(); // Высота окна браузера
+        var d_height = $(document).height(); // Высота всего документа
+        var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+        if (w_top + 850 >= e_top) {
+            $('.number_stat').each(function () {
+                var size = $(this).text().split(".")[1] ? $(this).text().split(".")[1].length : 0;
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 5000,
+                    step: function (func) {
+                        $(this).text(parseFloat(func).toFixed(size));
+                    }
+                });
+            });
+
+            show = false;
         }
     });
-}
+
+});
+
+
 
 
 
