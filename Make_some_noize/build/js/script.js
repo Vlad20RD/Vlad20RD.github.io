@@ -30,7 +30,7 @@ $(document).ready(function(){
         dots: false,
         nav: true,
         autoplay: true,
-        autoplayTimeout: 6000,
+        autoplayTimeout: 8000,
         smartSpeed: 700,
         autoplayHoverPause: true,
         navText : ["<img src='build/img/icons/arrow_white.png'>","<img src='build/img/icons/arrow_white.png'>"],
@@ -336,49 +336,41 @@ for ( let i of document.querySelectorAll(".number_stat") ) {
 
 /*__________________________________окна____________________________________*/
 
-$(function () {
-    $("body #modal div .close").click(function(){
-        $("body #modal").addClass("cl");
-    });
-});
 
+$(document).ready(function () {
 
-$(function () {
-    var modal = {
-        self: $('#modal'),
-
-        showModal: function (content) {
-            this.self.find('#inner_modal').html(content);
-            //this.self.fadeIn(200);
-            this.self.css({'display':'flex'});
-        },
-        hideModal: function(){
-            this.self.fadeOut(200);
-            this.self.find('#inner_modal').html('');
-        }
-    };
-
-    $('.show_modal').on('click', function () {
-       var id = $(this).data('id');
-       var content = $('#cont'+id).html();
-       modal.showModal(content);
+    $('.w1').bind('click', function(){
+        $('.modal').removeClass("op");
+        $('#wind1').addClass("op");
     });
 
-    $('#modal').on('click', function(e){
-        if($(e.target).attr('id') === 'modal'){
-            modal.hideModal();
-        }
-        else{
-            return false;
-        }
+    $('.w3').bind('click', function(){
+        $('.modal').removeClass("op");
+        $('#wind3').addClass("op");
     });
 
-    $('.close_modal').on('click', function(){
-        modal.hideModal();
+    $('.w4').bind('click', function(){
+        $('.modal').removeClass("op");
+        $('#wind4').addClass("op");
+    });
+
+    $('.w5').bind('click', function(){
+        $('.modal').removeClass("op");
+        $('#wind5').addClass("op");
+    });
+
+    $('.w6').bind('click', function(){
+        $('.modal').removeClass("op");
+        $('#wind6').addClass("op");
+    });
+
+    $(function () {
+        $(".close_modal").click(function(){
+            $("body .modal").removeClass("op");
+        });
     });
 
 });
-
 
 
 

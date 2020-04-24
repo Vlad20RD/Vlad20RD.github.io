@@ -68,8 +68,7 @@
 			<div>Музыкальный потенциал</div>
 		</div>
 
-
-		<div class="btn_home"><button data-id="1" class="btn-pulse show_modal">Хочу бесплатный урок</button></div>
+		<div class="btn_home"><button class="btn-pulse show_modal w1">Хочу бесплатный урок</button></div>
 
 		<video autoplay muted loop id="myVideo">
 			<source src="build/img/animate.mp4" type="video/mp4">
@@ -89,7 +88,7 @@
 					<div class="lesson_section">
 						<div class="icon"><img src="build/img/icons/les1.png"></div>
 						<div class="lesson_title">ONLINE консультация</div>
-						<div class="link show_modal" data-id="2">Узнать больше</div>
+						<div class="link show_modal w5">Узнать больше</div>
 					</div>
 				</div>
 
@@ -97,7 +96,7 @@
 					<div class="lesson_section">
 						<div class="icon"><img src="build/img/icons/les2.png"></div>
 						<div class="lesson_title">Создание музыки в ABLETON</div>
-						<div class="link show_modal" data-id="2">Узнать больше</div>
+						<div class="link show_modal w3">Узнать больше</div>
 					</div>
 				</div>
 
@@ -105,7 +104,7 @@
 					<div class="lesson_section">
 						<div class="icon"><img src="build/img/icons/les3.png"></div>
 						<div class="lesson_title">Создание музыки в FL STUDIO</div>
-						<div class="link show_modal" data-id="2">Узнать больше</div>
+						<div class="link show_modal w6">Узнать больше</div>
 					</div>
 				</div>
 
@@ -113,7 +112,7 @@
 					<div class="lesson_section">
 						<div class="icon"><img src="build/img/icons/les4.png"></div>
 						<div class="lesson_title">Если я уже пишу музыку</div>
-						<div class="link show_modal" data-id="2">Узнать больше</div>
+						<div class="link show_modal w5">Узнать больше</div>
 					</div>
 				</div>
 
@@ -149,8 +148,8 @@
 							</div>
 						</div>
 						<div class="buttons">
-								<button data-id="3" class="show_modal">Примеры работ</button>
-								<button data-id="6" class="show_modal">Хочу учиться у него</button>
+								<button class="show_modal w4">Примеры работ</button>
+								<button class="show_modal w1">Хочу учиться у него</button>
 						</div>
 					</div>
 
@@ -188,8 +187,8 @@
 							</div>
 						</div>
 						<div class="buttons">
-							<button data-id="3" class="show_modal">Примеры работ</button>
-							<button data-id="6" class="show_modal">Хочу учиться у него</button>
+							<button class="show_modal w4">Примеры работ</button>
+							<button class="show_modal w1">Хочу учиться у него</button>
 						</div>
 					</div>
 
@@ -614,7 +613,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<button class="btn show_modal" data-id="5">Хочу писать треки</button>
+				<button class="btn show_modal w1" data-id="5">Хочу писать треки</button>
 			</div>
 		</div>
 
@@ -652,209 +651,322 @@
 
 
 
-	<div id="modal">
+	<div class="modal" id="wind1">
 		<div class="section_modal">
+
 			<div class="close_modal"><i class="far fa-times"></i></div>
-			<div id="inner_modal"></div>
-		</div>
-	</div>
 
-
-
-
-	<div id="cont1" class="mod_content">
-
-		<div class="request">
-			<div class="title">Запись на пробный бесплатный online урок</div>
-			<form action="#">
-				<input type="text" placeholder="Имя" class="text">
-				<input type="text" placeholder="Номер" class="text">
-				<input type="text" placeholder="Почта" class="text">
-				<div class="textarea">
-					<div>Есть ли у вас опыт?</div>
-					<textarea></textarea>
-				</div>
-				<div class="textarea">
-					<div>Чему хотите научиться?</div>
-					<textarea></textarea>
-				</div>
-				<button class="btn">Записаться бесплатно</button>
-			</form>
-		</div>
-
-	</div>
-
-	<div id="cont2" class="mod_content">
-
-		<div class="training_program">
-			<div class="title">Выбери свою программу обучения</div>
-			<div class="programs">
-				<div class="description">
-					<div class="program">
-						<div>Base</div>
-						<div>5 занятий</div>
-						<div><span></span>5 домашних заданий</div>
-						<div><span></span>освоить программу и плагины для создания музыки</div>
-						<div><span></span>изучить интерфейс ableton</div>
-						<div><span></span>научиться обрабатывать звуки</div>
-						<div><span></span>работать с наложением композиции треков</div>
+			<div class="request">
+				<div class="title">Запись на пробный бесплатный online урок</div>
+				<form action="#">
+					<input type="text" placeholder="Имя" class="text">
+					<input type="text" placeholder="Номер" class="text">
+					<input type="text" placeholder="Почта" class="text">
+					<div class="textarea">
+						<div>Есть ли у вас опыт?</div>
+						<textarea></textarea>
 					</div>
-					<div class="program">
-						<div>Profi</div>
-						<div>10 занятий</div>
-						<div><span></span>10 домашних заданий</div>
-						<div><span></span>научиться брать звуки из головы</div>
-						<div><span></span>Разрабатывать музыкальные идеи</div>
-						<div><span></span>Создавать полноценные треки</div>
+					<div class="textarea">
+						<div>Чему хотите научиться?</div>
+						<textarea></textarea>
 					</div>
-					<div class="program">
-						<div>Super profi</div>
-						<div>20 занятий</div>
-						<div><span></span>20 домашних заданий</div>
-						<div><span></span>Развитие творческого потенциала</div>
-						<div><span></span>Музыкальная теория</div>
-						<div><span></span>всё из предыдущих вариантов</div>
-					</div>
-				</div>
-
-				<div class="buttons_and_price">
-					<div class="section">
-						<div><a href="#">план курса</a></div>
-						<div>4 700 руб.</div>
-						<div class="btn"><button>мне подходит</button></div>
-					</div>
-					<div class="section">
-						<div><a href="#">план курса</a></div>
-						<div>9 000 руб.</div>
-						<div class="two">*можно в два платежа</div>
-						<div class="btn"><button>мне подходит</button></div>
-					</div>
-					<div class="section">
-						<div><a href="#">план курса</a></div>
-						<div>17 000 руб.</div>
-						<div class="btn"><button>мне подходит</button></div>
-					</div>
-				</div>
-
-				<div class="btn"><button>хочу консультацию</button></div>
+					<button class="btn">Записаться бесплатно</button>
+				</form>
 			</div>
-		</div>
 
+		</div>
 	</div>
 
-	<div id="cont3" class="mod_content">
+	<div class="modal" id="wind3">
+		<div class="section_modal">
 
-		<div class="work_examples">
-			<div class="title">Примеры работ Ивана Иванова Dj Petrov</div>
-			<div class="audioplayer_window">
+			<div class="close_modal"><i class="far fa-times"></i></div>
 
-				<div id="jquery_jplayer_3" class="jp-jplayer"></div>
-				<div id="jp_container_3" class="jp-audio" role="application" aria-label="media player">
-					<div class="jp-type-playlist">
-						<div class="jp-gui jp-interface">
-							<div class="jp-controls">
-								<button class="jp-previous" role="button" tabindex="0"><i class="fas fa-backward"></i></button>
-								<button class="jp-play" role="button" tabindex="0"><i class="fas fa-play"></i></button>
-								<button class="jp-next" role="button" tabindex="0"><i class="fas fa-forward"></i></button>
+			<div class="training_program">
+				<div class="title">Выбери свою программу обучения</div>
+				<div class="programs">
+					<div class="description">
+						<div class="program">
+							<div>Base</div>
+							<div>5 занятий</div>
+							<div><span></span>5 домашних заданий</div>
+							<div><span></span>освоить программу и плагины для создания музыки</div>
+							<div><span></span>изучить интерфейс ableton</div>
+							<div><span></span>научиться обрабатывать звуки</div>
+							<div><span></span>работать с наложением композиции треков</div>
+						</div>
+						<div class="program">
+							<div>Profi</div>
+							<div>10 занятий</div>
+							<div><span></span>10 домашних заданий</div>
+							<div><span></span>научиться брать звуки из головы</div>
+							<div><span></span>Разрабатывать музыкальные идеи</div>
+							<div><span></span>Создавать полноценные треки</div>
+						</div>
+						<div class="program">
+							<div>Super profi</div>
+							<div>20 занятий</div>
+							<div><span></span>20 домашних заданий</div>
+							<div><span></span>Развитие творческого потенциала</div>
+							<div><span></span>Музыкальная теория</div>
+							<div><span></span>всё из предыдущих вариантов</div>
+						</div>
+					</div>
+
+					<div class="buttons_and_price">
+						<div class="section">
+							<div><a href="#">план курса</a></div>
+							<div>4 700 руб.</div>
+							<div class="btn"><button>мне подходит</button></div>
+						</div>
+						<div class="section">
+							<div><a href="#">план курса</a></div>
+							<div>9 000 руб.</div>
+							<div class="two">*можно в два платежа</div>
+							<div class="btn"><button>мне подходит</button></div>
+						</div>
+						<div class="section">
+							<div><a href="#">план курса</a></div>
+							<div>17 000 руб.</div>
+							<div class="btn"><button>мне подходит</button></div>
+						</div>
+					</div>
+
+					<div class="btn"><button>хочу консультацию</button></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="modal" id="wind6">
+		<div class="section_modal">
+
+			<div class="close_modal"><i class="far fa-times"></i></div>
+
+			<div class="training_program">
+				<div class="title">Выбери свою программу обучения</div>
+				<div class="programs">
+					<div class="description">
+						<div class="program">
+							<div>Base</div>
+							<div>5 занятий</div>
+							<div><span></span>5 домашних заданий</div>
+							<div><span></span>освоить программу и плагины для создания музыки</div>
+							<div><span></span>изучить интерфейс FL studio</div>
+							<div><span></span>научиться обрабатывать звуки</div>
+							<div><span></span>работать с наложением композиции треков</div>
+						</div>
+						<div class="program">
+							<div>Profi</div>
+							<div>10 занятий</div>
+							<div><span></span>10 домашних заданий</div>
+							<div><span></span>научиться брать звуки из головы</div>
+							<div><span></span>Разрабатывать музыкальные идеи</div>
+							<div><span></span>Создавать полноценные треки</div>
+						</div>
+						<div class="program">
+							<div>Super profi</div>
+							<div>20 занятий</div>
+							<div><span></span>20 домашних заданий</div>
+							<div><span></span>Развитие творческого потенциала</div>
+							<div><span></span>Музыкальная теория</div>
+							<div><span></span>всё из предыдущих вариантов</div>
+						</div>
+					</div>
+
+					<div class="buttons_and_price">
+						<div class="section">
+							<div><a href="#">план курса</a></div>
+							<div>4 700 руб.</div>
+							<div class="btn"><button>мне подходит</button></div>
+						</div>
+						<div class="section">
+							<div><a href="#">план курса</a></div>
+							<div>9 000 руб.</div>
+							<div class="two">*можно в два платежа</div>
+							<div class="btn"><button>мне подходит</button></div>
+						</div>
+						<div class="section">
+							<div><a href="#">план курса</a></div>
+							<div>17 000 руб.</div>
+							<div class="btn"><button>мне подходит</button></div>
+						</div>
+					</div>
+
+					<div class="btn"><button>хочу консультацию</button></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="modal" id="wind4">
+		<div class="section_modal">
+
+			<div class="close_modal"><i class="far fa-times"></i></div>
+
+			<div class="work_examples">
+				<div class="title">Примеры работ Ивана Иванова Dj Petrov</div>
+				<div class="audioplayer_window">
+
+					<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+					<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+						<div class="jp-type-single">
+							<div class="jp-details">
+								<div class="jp-title" aria-label="title">&nbsp;</div>
 							</div>
-							<div class="progress">
-								<div class="jp-time-holder">
-									<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
-									<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
-								</div>
-
-								<div class="jp-progress">
-									<div class="jp-seek-bar">
-										<div class="jp-play-bar"></div>
+							<div class="jp-gui jp-interface">
+								<div class="jp-controls-holder">
+									<div class="jp-controls">
+										<button class="jp-play" role="button" tabindex="0">play</button>
+										<button class="jp-stop" role="button" tabindex="0">stop</button>
+									</div>
+									<div class="jp-progress">
+										<div class="jp-seek-bar">
+											<div class="jp-play-bar"></div>
+										</div>
+									</div>
+									<div class="jp-toggles">
+										<button class="jp-repeat" role="button" tabindex="0">repeat</button>
 									</div>
 								</div>
 							</div>
 
+							<div class="timers_aud">
+								<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+								<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+							</div>
+
 							<div class="jp-volume-controls">
-								<button class="jp-mute" role="button" tabindex="0"><i class="fas fa-volume-up"></i></button>
+								<button class="jp-mute" role="button" tabindex="0">mute</button>
+								<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+								<div class="vol_fa_ico"><i class="far fa-volume-up"></i></div>
 								<div class="jp-volume-bar">
 									<div class="jp-volume-bar-value"></div>
 								</div>
 							</div>
-						</div>
-						<div class="jp-playlist">
-							<ul>
-								<li>&nbsp;</li>
-							</ul>
-						</div>
-						<div class="jp-no-solution">
-							<span>Update Required</span>
-							To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+							<div class="jp-no-solution">
+								<span>Update Required</span>
+								To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+							</div>
 						</div>
 					</div>
-				</div>
 
+					<div id="jquery_jplayer_3" class="jp-jplayer"></div>
+					<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+						<div class="jp-type-single">
+							<div class="jp-details">
+								<div class="jp-title" aria-label="title">&nbsp;</div>
+							</div>
+							<div class="jp-gui jp-interface">
+								<div class="jp-controls-holder">
+									<div class="jp-controls">
+										<button class="jp-play" role="button" tabindex="0">play</button>
+										<button class="jp-stop" role="button" tabindex="0">stop</button>
+									</div>
+									<div class="jp-progress">
+										<div class="jp-seek-bar">
+											<div class="jp-play-bar"></div>
+										</div>
+									</div>
+									<div class="jp-toggles">
+										<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="timers_aud">
+								<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+								<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+							</div>
+
+							<div class="jp-volume-controls">
+								<button class="jp-mute" role="button" tabindex="0">mute</button>
+								<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+								<div class="vol_fa_ico"><i class="far fa-volume-up"></i></div>
+								<div class="jp-volume-bar">
+									<div class="jp-volume-bar-value"></div>
+								</div>
+							</div>
+							<div class="jp-no-solution">
+								<span>Update Required</span>
+								To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+							</div>
+						</div>
+					</div>
+
+					<div id="jquery_jplayer_4" class="jp-jplayer"></div>
+					<div id="jp_container_4" class="jp-audio" role="application" aria-label="media player">
+						<div class="jp-type-single">
+							<div class="jp-details">
+								<div class="jp-title" aria-label="title">&nbsp;</div>
+							</div>
+							<div class="jp-gui jp-interface">
+								<div class="jp-controls-holder">
+									<div class="jp-controls">
+										<button class="jp-play" role="button" tabindex="0">play</button>
+										<button class="jp-stop" role="button" tabindex="0">stop</button>
+									</div>
+									<div class="jp-progress">
+										<div class="jp-seek-bar">
+											<div class="jp-play-bar"></div>
+										</div>
+									</div>
+									<div class="jp-toggles">
+										<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="timers_aud">
+								<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+								<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+							</div>
+
+							<div class="jp-volume-controls">
+								<button class="jp-mute" role="button" tabindex="0">mute</button>
+								<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+								<div class="vol_fa_ico"><i class="far fa-volume-up"></i></div>
+								<div class="jp-volume-bar">
+									<div class="jp-volume-bar-value"></div>
+								</div>
+							</div>
+							<div class="jp-no-solution">
+								<span>Update Required</span>
+								To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="btn"><button>хочу писать так же</button></div>
 			</div>
-			<div class="btn"><button>хочу писать так же</button></div>
-		</div>
 
+		</div>
 	</div>
 
-	<div id="cont4" class="mod_content">
+	<div class="modal" id="wind5">
+		<div class="section_modal">
 
-		<div class="payment_on_time">
-			<div class="image"><img src="build/img/stud.jpg"></div>
-			<div class="text">
-				1 час - 1000 руб, но
-				Вы можете брать 5-10 минут,
-				чтобы уточнить у преподавателя
-				какой-то мелкий вопрос.
-				Преподаватели всегда на связи.
-				Пишите им в любое время
+			<div class="close_modal"><i class="far fa-times"></i></div>
+
+			<div class="payment_on_time">
+				<div class="image"><img src="build/img/stud.jpg"></div>
+				<div class="text">
+					1 час - 1000 руб, но
+					Вы можете брать 5-10 минут,
+					чтобы уточнить у преподавателя
+					какой-то мелкий вопрос.
+					Преподаватели всегда на связи.
+					Пишите им в любое время
+				</div>
+				<div class="btn"><button>хочу консультацию</button></div>
 			</div>
-			<div class="btn"><button>хочу консультацию</button></div>
-		</div>
 
+		</div>
 	</div>
 
-	<div id="cont5" class="mod_content">
-
-		<div class="request">
-			<div class="title">Заявка</div>
-			<form action="#">
-				<input type="text" placeholder="Имя" class="text">
-				<input type="text" placeholder="Номер" class="text">
-				<input type="text" placeholder="Почта" class="text">
-				<div class="textarea">
-					<div>Есть ли у вас опыт?</div>
-					<textarea></textarea>
-				</div>
-				<div class="textarea">
-					<div>Чему хотите научиться?</div>
-					<textarea></textarea>
-				</div>
-				<button class="btn">Записаться</button>
-			</form>
-		</div>
-
-	</div>
-
-	<div id="cont6" class="mod_content">
-
-		<div class="request">
-			<div class="title">Запись на консультацию с Петей Ивановым</div>
-			<form action="#">
-				<input type="text" placeholder="Имя" class="text">
-				<input type="text" placeholder="Номер" class="text">
-				<input type="text" placeholder="Почта" class="text">
-				<div class="textarea">
-					<div>Есть ли у вас опыт?</div>
-					<textarea></textarea>
-				</div>
-				<div class="textarea">
-					<div>Чему хотите научиться?</div>
-					<textarea></textarea>
-				</div>
-				<button class="btn">Записаться</button>
-			</form>
-		</div>
-
-	</div>
 
 
 
