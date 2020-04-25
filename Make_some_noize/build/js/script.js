@@ -232,14 +232,8 @@ $(document).ready(function(){
 });
 
 */
-/*
-$(document).ready(function(){
-    $(".jp-audio .jp-type-playlist .jp-gui .jp-controls .jp-play").click(function(){
-        $('.jp-audio .jp-type-playlist .jp-gui .jp-controls .jp-play').toggleClass('stop');
-    });
-});
-*/
 
+/*
 $(document).ready(function(){
 
     $("#jquery_jplayer_1").jPlayer({
@@ -440,8 +434,75 @@ $(document).ready(function(){
         keyEnabled: true
     });
 });
+*/
 
+$(document).ready(function(){
 
+    $("#jquery_jplayer_1").jPlayer({
+        ready: function () {
+            $(this).jPlayer("setMedia", {
+                title: "Stirring of a fool",
+                m4a: "http://www.jplayer.org/audio/m4a/Miaow-08-Stirring-of-a-fool.m4a",
+                oga: "http://www.jplayer.org/audio/ogg/Miaow-08-Stirring-of-a-fool.ogg"
+            });
+        },
+        play: function() { // To avoid multiple jPlayers playing together.
+            $(this).jPlayer("pauseOthers");
+        },
+        swfPath: "../../js",
+        supplied: "m4a, oga",
+        wmode: "window",
+        globalVolume: true,
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true
+    });
+
+    $("#jquery_jplayer_2").jPlayer({
+        ready: function () {
+            $(this).jPlayer("setMedia", {
+                title: "Hidden",
+                m4a: "http://www.jplayer.org/audio/m4a/Miaow-02-Hidden.m4a",
+                oga: "http://www.jplayer.org/audio/ogg/Miaow-02-Hidden.ogg"
+            });
+        },
+        play: function() { // To avoid multiple jPlayers playing together.
+            $(this).jPlayer("pauseOthers");
+        },
+        swfPath: "../../js",
+        supplied: "m4a, oga",
+        cssSelectorAncestor: "#jp_container_2",
+        wmode: "window",
+        globalVolume: true,
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true
+    });
+
+    $("#jquery_jplayer_3").jPlayer({
+        ready: function () {
+            $(this).jPlayer("setMedia", {
+                title: "Bubble",
+                m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
+                oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+            });
+        },
+        play: function() { // To avoid multiple jPlayers playing together.
+            $(this).jPlayer("pauseOthers");
+        },
+        swfPath: "../../js",
+        supplied: "m4a, oga",
+        cssSelectorAncestor: "#jp_container_3",
+        wmode: "window",
+        globalVolume: true,
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true
+    });
+});
 
 
 /*________________________________counter________________________________*/
