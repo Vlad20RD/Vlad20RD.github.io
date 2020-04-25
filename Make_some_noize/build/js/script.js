@@ -441,16 +441,14 @@ $(document).ready(function(){
     $("#jquery_jplayer_1").jPlayer({
         ready: function () {
             $(this).jPlayer("setMedia", {
-                title: "Stirring of a fool",
-                m4a: "http://www.jplayer.org/audio/m4a/Miaow-08-Stirring-of-a-fool.m4a",
-                oga: "http://www.jplayer.org/audio/ogg/Miaow-08-Stirring-of-a-fool.ogg"
+                title: "Dua Lipa",
+                mp3: "build/audio/audio1.mp3"
             });
         },
         play: function() { // To avoid multiple jPlayers playing together.
             $(this).jPlayer("pauseOthers");
         },
         swfPath: "../../js",
-        supplied: "m4a, oga",
         wmode: "window",
         globalVolume: true,
         useStateClassSkin: true,
@@ -463,8 +461,7 @@ $(document).ready(function(){
         ready: function () {
             $(this).jPlayer("setMedia", {
                 title: "Hidden",
-                m4a: "http://www.jplayer.org/audio/m4a/Miaow-02-Hidden.m4a",
-                oga: "http://www.jplayer.org/audio/ogg/Miaow-02-Hidden.ogg"
+                m4a: "http://www.jplayer.org/audio/m4a/Miaow-02-Hidden.m4a"
             });
         },
         play: function() { // To avoid multiple jPlayers playing together.
@@ -485,8 +482,7 @@ $(document).ready(function(){
         ready: function () {
             $(this).jPlayer("setMedia", {
                 title: "Bubble",
-                m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
-                oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+                m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a"
             });
         },
         play: function() { // To avoid multiple jPlayers playing together.

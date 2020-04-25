@@ -1026,7 +1026,8 @@ body {
                 margin-top: 14px; }
           body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer {
             margin-top: 10px;
-            width: 100%; }
+            max-width: 100%;
+            margin-right: 60px; }
             body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio {
               width: 100%;
               border: none;
@@ -1077,7 +1078,7 @@ body {
                       display: none !important; }
                 body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .timers_aud {
                   margin-left: 87px;
-                  margin-right: 32px;
+                  margin-right: 2px;
                   height: 20px;
                   max-width: 100%;
                   display: -webkit-box;
@@ -3110,8 +3111,7 @@ body {
                 font-size: 24px;
                 margin-top: 10px; }
           body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer {
-            margin-top: 10px;
-            width: 100%; }
+            margin-top: 10px; }
             body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio {
               width: 100%;
               border: none;
@@ -3161,8 +3161,8 @@ body {
                     body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-toggles, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-toggles {
                       display: none !important; }
                 body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .timers_aud {
-                  margin-left: 87px;
-                  margin-right: 32px;
+                  margin-left: 85px;
+                  margin-right: 3px;
                   height: 15px;
                   max-width: 100%;
                   display: -webkit-box;
