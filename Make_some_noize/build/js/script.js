@@ -448,7 +448,7 @@ $(document).ready(function(){
         play: function() { // To avoid multiple jPlayers playing together.
             $(this).jPlayer("pauseOthers");
         },
-        swfPath: "../../js",
+        cssSelectorAncestor: "#jp_container_1",
         wmode: "window",
         globalVolume: true,
         useStateClassSkin: true,
@@ -460,15 +460,13 @@ $(document).ready(function(){
     $("#jquery_jplayer_2").jPlayer({
         ready: function () {
             $(this).jPlayer("setMedia", {
-                title: "Hidden",
-                m4a: "http://www.jplayer.org/audio/m4a/Miaow-02-Hidden.m4a"
+                title: "The Weekend",
+                mp3: "build/audio/audio2.mp3"
             });
         },
         play: function() { // To avoid multiple jPlayers playing together.
             $(this).jPlayer("pauseOthers");
         },
-        swfPath: "../../js",
-        supplied: "m4a, oga",
         cssSelectorAncestor: "#jp_container_2",
         wmode: "window",
         globalVolume: true,
@@ -481,16 +479,128 @@ $(document).ready(function(){
     $("#jquery_jplayer_3").jPlayer({
         ready: function () {
             $(this).jPlayer("setMedia", {
-                title: "Bubble",
-                m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a"
+                title: "Mabel",
+                mp3: "build/audio/audio3.mp3"
             });
         },
-        play: function() { // To avoid multiple jPlayers playing together.
+        play: function() {
             $(this).jPlayer("pauseOthers");
         },
-        swfPath: "../../js",
-        supplied: "m4a, oga",
         cssSelectorAncestor: "#jp_container_3",
+        wmode: "window",
+        globalVolume: true,
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true
+    });
+
+    $("#jquery_jplayer_4").jPlayer({
+        ready: function () {
+            $(this).jPlayer("setMedia", {
+                title: "Ed Sheeran",
+                mp3: "build/audio/audio4.mp3"
+            });
+        },
+        play: function() {
+            $(this).jPlayer("pauseOthers");
+        },
+        cssSelectorAncestor: "#jp_container_4",
+        wmode: "window",
+        globalVolume: true,
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true
+    });
+
+    $("#jquery_jplayer_5").jPlayer({
+        ready: function () {
+            $(this).jPlayer("setMedia", {
+                title: "Selena Gomez",
+                mp3: "build/audio/audio5.mp3"
+            });
+        },
+        play: function() {
+            $(this).jPlayer("pauseOthers");
+        },
+        cssSelectorAncestor: "#jp_container_5",
+        wmode: "window",
+        globalVolume: true,
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true
+    });
+
+    $("#jquery_jplayer_6").jPlayer({
+        ready: function () {
+            $(this).jPlayer("setMedia", {
+                title: "Camilla Cabello",
+                mp3: "build/audio/audio6.mp3"
+            });
+        },
+        play: function() {
+            $(this).jPlayer("pauseOthers");
+        },
+        cssSelectorAncestor: "#jp_container_6",
+        wmode: "window",
+        globalVolume: true,
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true
+    });
+
+    $("#jquery_jplayer_7").jPlayer({
+        ready: function () {
+            $(this).jPlayer("setMedia", {
+                title: "Ariana Grande",
+                mp3: "build/audio/audio7.mp3"
+            });
+        },
+        play: function() {
+            $(this).jPlayer("pauseOthers");
+        },
+        cssSelectorAncestor: "#jp_container_7",
+        wmode: "window",
+        globalVolume: true,
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true
+    });
+
+    $("#jquery_jplayer_8").jPlayer({
+        ready: function () {
+            $(this).jPlayer("setMedia", {
+                title: "Bebe Rexha",
+                mp3: "build/audio/audio8.mp3"
+            });
+        },
+        play: function() {
+            $(this).jPlayer("pauseOthers");
+        },
+        cssSelectorAncestor: "#jp_container_8",
+        wmode: "window",
+        globalVolume: true,
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true
+    });
+
+    $("#jquery_jplayer_9").jPlayer({
+        ready: function () {
+            $(this).jPlayer("setMedia", {
+                title: "Rita Ora",
+                mp3: "build/audio/audio9.mp3"
+            });
+        },
+        play: function() {
+            $(this).jPlayer("pauseOthers");
+        },
+        cssSelectorAncestor: "#jp_container_9",
         wmode: "window",
         globalVolume: true,
         useStateClassSkin: true,
