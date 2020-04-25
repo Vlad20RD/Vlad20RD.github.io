@@ -245,16 +245,39 @@ $(document).ready(function(){
     $("#jquery_jplayer_1").jPlayer({
         ready: function () {
             $(this).jPlayer("setMedia", {
-                title: "Stirring of a fool",
-                m4a: "http://www.jplayer.org/audio/m4a/Miaow-08-Stirring-of-a-fool.m4a",
-                oga: "http://www.jplayer.org/audio/ogg/Miaow-08-Stirring-of-a-fool.ogg"
+                title:"Cro Magnon Man",
+                mp3:"http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3",
+                oga:"http://www.jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg"
             });
         },
         play: function() { // To avoid multiple jPlayers playing together.
             $(this).jPlayer("pauseOthers");
         },
         swfPath: "../../js",
-        supplied: "m4a, oga",
+        supplied: "oga, mp3",
+        cssSelectorAncestor: "#jp_container_1",
+        wmode: "window",
+        globalVolume: true,
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true
+    });
+
+    $("#jquery_jplayer_2").jPlayer({
+        ready: function () {
+            $(this).jPlayer("setMedia", {
+                title:"Tempered Song",
+                mp3:"http://www.jplayer.org/audio/mp3/Miaow-01-Tempered-song.mp3",
+                oga:"http://www.jplayer.org/audio/ogg/Miaow-01-Tempered-song.ogg"
+            });
+        },
+        play: function() { // To avoid multiple jPlayers playing together.
+            $(this).jPlayer("pauseOthers");
+        },
+        swfPath: "../../js",
+        supplied: "oga, mp3",
+        cssSelectorAncestor: "#jp_container_2",
         wmode: "window",
         globalVolume: true,
         useStateClassSkin: true,
@@ -266,16 +289,16 @@ $(document).ready(function(){
     $("#jquery_jplayer_3").jPlayer({
         ready: function () {
             $(this).jPlayer("setMedia", {
-                title: "Bubble",
-                m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
-                oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+                title:"Your Face",
+                mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+                oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
             });
         },
         play: function() { // To avoid multiple jPlayers playing together.
             $(this).jPlayer("pauseOthers");
         },
         swfPath: "../../js",
-        supplied: "m4a, oga",
+        supplied: "oga, mp3",
         cssSelectorAncestor: "#jp_container_3",
         wmode: "window",
         globalVolume: true,
@@ -288,17 +311,127 @@ $(document).ready(function(){
     $("#jquery_jplayer_4").jPlayer({
         ready: function () {
             $(this).jPlayer("setMedia", {
-                title: "Hidden",
-                m4a: "http://www.jplayer.org/audio/m4a/Miaow-02-Hidden.m4a",
-                oga: "http://www.jplayer.org/audio/ogg/Miaow-02-Hidden.ogg"
+                title:"Cyber Sonnet",
+                mp3:"http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3",
+                oga:"http://www.jplayer.org/audio/ogg/TSP-07-Cybersonnet.ogg"
             });
         },
         play: function() { // To avoid multiple jPlayers playing together.
             $(this).jPlayer("pauseOthers");
         },
         swfPath: "../../js",
-        supplied: "m4a, oga",
+        supplied: "oga, mp3",
         cssSelectorAncestor: "#jp_container_4",
+        wmode: "window",
+        globalVolume: true,
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true
+    });
+
+    $("#jquery_jplayer_5").jPlayer({
+        ready: function () {
+            $(this).jPlayer("setMedia", {
+                title:"Hidden",
+                mp3:"http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3",
+                oga:"http://www.jplayer.org/audio/ogg/Miaow-02-Hidden.ogg"
+            });
+        },
+        play: function() { // To avoid multiple jPlayers playing together.
+            $(this).jPlayer("pauseOthers");
+        },
+        swfPath: "../../js",
+        supplied: "oga, mp3",
+        cssSelectorAncestor: "#jp_container_5",
+        wmode: "window",
+        globalVolume: true,
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true
+    });
+
+    $("#jquery_jplayer_6").jPlayer({
+        ready: function () {
+            $(this).jPlayer("setMedia", {
+                title:"Lismore",
+                mp3:"http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3",
+                oga:"http://www.jplayer.org/audio/ogg/Miaow-04-Lismore.ogg"
+            });
+        },
+        play: function() { // To avoid multiple jPlayers playing together.
+            $(this).jPlayer("pauseOthers");
+        },
+        swfPath: "../../js",
+        supplied: "oga, mp3",
+        cssSelectorAncestor: "#jp_container_6",
+        wmode: "window",
+        globalVolume: true,
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true
+    });
+
+    $("#jquery_jplayer_7").jPlayer({
+        ready: function () {
+            $(this).jPlayer("setMedia", {
+                title:"Stirring of a Fool",
+                mp3:"http://www.jplayer.org/audio/mp3/Miaow-08-Stirring-of-a-fool.mp3",
+                oga:"http://www.jplayer.org/audio/ogg/Miaow-08-Stirring-of-a-fool.ogg"
+            });
+        },
+        play: function() { // To avoid multiple jPlayers playing together.
+            $(this).jPlayer("pauseOthers");
+        },
+        swfPath: "../../js",
+        supplied: "oga, mp3",
+        cssSelectorAncestor: "#jp_container_7",
+        wmode: "window",
+        globalVolume: true,
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true
+    });
+
+    $("#jquery_jplayer_8").jPlayer({
+        ready: function () {
+            $(this).jPlayer("setMedia", {
+                title:"Partir",
+                mp3:"http://www.jplayer.org/audio/mp3/Miaow-09-Partir.mp3",
+                oga:"http://www.jplayer.org/audio/ogg/Miaow-09-Partir.ogg"
+            });
+        },
+        play: function() { // To avoid multiple jPlayers playing together.
+            $(this).jPlayer("pauseOthers");
+        },
+        swfPath: "../../js",
+        supplied: "oga, mp3",
+        cssSelectorAncestor: "#jp_container_8",
+        wmode: "window",
+        globalVolume: true,
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true
+    });
+
+    $("#jquery_jplayer_9").jPlayer({
+        ready: function () {
+            $(this).jPlayer("setMedia", {
+                title:"Thin Ice",
+                mp3:"http://www.jplayer.org/audio/mp3/Miaow-10-Thin-ice.mp3",
+                oga:"http://www.jplayer.org/audio/ogg/Miaow-10-Thin-ice.ogg"
+            });
+        },
+        play: function() { // To avoid multiple jPlayers playing together.
+            $(this).jPlayer("pauseOthers");
+        },
+        swfPath: "../../js",
+        supplied: "oga, mp3",
+        cssSelectorAncestor: "#jp_container_9",
         wmode: "window",
         globalVolume: true,
         useStateClassSkin: true,
@@ -331,7 +464,7 @@ $(document).ready(function () {
                 $(this).prop('Counter', 0).animate({
                     Counter: $(this).text()
                 }, {
-                    duration: 5000,
+                    duration: 3500,
                     step: function (func) {
                         $(this).text(parseFloat(func).toFixed(size));
                     }

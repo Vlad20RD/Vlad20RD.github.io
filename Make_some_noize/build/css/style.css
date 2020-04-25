@@ -431,8 +431,10 @@ body {
       -ms-flex-align: center;
       align-items: center;
       font-size: 50px; }
-      body .msg_fixed div i {
-        padding-top: 7px; }
+      body .msg_fixed div img {
+        padding-top: 2px;
+        padding-right: 2px;
+        width: 55%; }
       body .msg_fixed div::after {
         content: "";
         display: inline-block;
@@ -844,7 +846,8 @@ body {
               background: transparent !important; }
             body .teachers .teachers_slider #slider1 .owl-nav .owl-prev img, body .teachers .teachers_slider #slider1 .owl-nav .owl-next img {
               height: 100%;
-              width: auto; }
+              width: auto;
+              overflow: hidden; }
           body .teachers .teachers_slider #slider1 .owl-nav .owl-prev {
             left: 0;
             top: 31%;
@@ -980,46 +983,47 @@ body {
           background: linear-gradient(145deg, #7422e6 0%, #db79a0 100%);
           -webkit-box-sizing: border-box;
           box-sizing: border-box;
-          padding: 20px 140px 80px 140px;
-          border-radius: 220px;
-          width: 780px;
+          padding: 20px 80px 60px 80px;
+          border-radius: 200px;
+          width: 700px;
           height: auto; }
-          body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .photo {
-            margin: 0 auto;
-            width: 220px;
-            height: 220px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 4px solid white; }
-            body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .photo img {
-              height: 100%;
-              width: 100%;
-              -o-object-fit: cover;
-              object-fit: cover; }
-          body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info {
-            margin-top: 20px;
-            text-align: center;
-            color: white; }
-            body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .name_and_surname {
-              margin-top: 5px;
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: flex;
-              -webkit-box-pack: center;
-              -ms-flex-pack: center;
-              justify-content: center;
-              font-size: 40px; }
-              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .name_and_surname .name {
-                margin-right: 17px; }
-            body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .age {
-              margin-top: 14px;
-              font-size: 26px; }
-              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .age span:nth-child(2) {
-                margin: 0 10px; }
-            body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .skills {
-              font-size: 30px;
-              margin-top: 14px;
-              padding-bottom: 40px; }
+          body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant {
+            padding-bottom: 30px; }
+            body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .photo {
+              margin: 0 auto;
+              width: 200px;
+              height: 200px;
+              border-radius: 50%;
+              overflow: hidden;
+              border: 4px solid white; }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .photo img {
+                height: 100%;
+                width: 100%;
+                -o-object-fit: cover;
+                object-fit: cover; }
+            body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info {
+              margin-top: 20px;
+              text-align: center;
+              color: white; }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .name_and_surname {
+                margin-top: 5px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                font-size: 40px; }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .name_and_surname .name {
+                  margin-right: 17px; }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .age {
+                margin-top: 14px;
+                font-size: 26px; }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .age span:nth-child(2) {
+                  margin: 0 10px; }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .skills {
+                font-size: 26px;
+                margin-top: 14px; }
           body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer {
             margin-top: 10px;
             width: 100%; }
@@ -1027,6 +1031,7 @@ body {
               width: 100%;
               border: none;
               background: transparent;
+              padding: 10px 0;
               /*название*/ }
               body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio:last-child .jp-type-single {
                 /*звук*/ }
@@ -1038,7 +1043,9 @@ body {
                 /*таймер*/
                 /*звук*/ }
                 body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface {
-                  background: transparent; }
+                  background: transparent;
+                  height: 25px;
+                  margin-right: 30px; }
                   body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder {
                     display: -webkit-box;
                     display: -ms-flexbox;
@@ -1046,35 +1053,39 @@ body {
                     -webkit-box-align: center;
                     -ms-flex-align: center;
                     align-items: center;
-                    height: 40px; }
-                    body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-controls, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-controls {
-                      background: transparent;
-                      width: 120px;
-                      display: -webkit-box;
-                      display: -ms-flexbox;
-                      display: flex;
-                      -webkit-box-pack: center;
-                      -ms-flex-pack: center;
-                      justify-content: center; }
-                      body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-controls .jp-play, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-controls .jp-play {
-                        display: block; }
-                      body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-controls .jp-stop, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-controls .jp-stop {
-                        display: none; }
+                    height: 40px;
+                    /*дорожка*/ }
+                    body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-controls .jp-stop, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-controls .jp-stop {
+                      display: none; }
                     body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress {
                       width: 100%;
                       background: none;
-                      height: 6px; }
+                      height: 6px;
+                      cursor: pointer;
+                      border-radius: 5px;
+                      overflow: hidden;
+                      margin-left: 10px; }
                       body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress .jp-seek-bar, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress .jp-seek-bar {
+                        height: 100%;
                         width: 100%;
                         background: white; }
                         body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress .jp-seek-bar .jp-play-bar, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress .jp-seek-bar .jp-play-bar {
-                          background: #671ecf; }
+                          height: 100%;
+                          background: #671ecf;
+                          border-radius: 0 4px 4px 0; }
                     body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-toggles, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-toggles {
                       display: none !important; }
                 body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .timers_aud {
+                  margin-left: 87px;
+                  margin-right: 32px;
                   height: 20px;
-                  margin-left: 98px;
-                  max-width: 100%; }
+                  max-width: 100%;
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                  justify-content: space-between; }
                   body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .timers_aud .jp-current-time, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .timers_aud .jp-duration {
                     font-size: 14px;
                     color: white;
@@ -1084,9 +1095,12 @@ body {
                   display: none;
                   -webkit-box-align: center;
                   -ms-flex-align: center;
-                  align-items: center; }
+                  align-items: center;
+                  margin-top: 20px;
+                  margin-left: 45px; }
                   body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-mute {
-                    color: white; }
+                    color: white;
+                    display: none; }
                   body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-volume-max {
                     display: none !important; }
                   body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .vol_fa_ico {
@@ -1098,7 +1112,8 @@ body {
                     position: relative;
                     height: 3px;
                     width: 100px;
-                    overflow: visible; }
+                    overflow: visible;
+                    cursor: pointer; }
                     body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar .jp-volume-bar-value {
                       background: #671ecf;
                       position: relative;
@@ -1118,9 +1133,13 @@ body {
                         transform: translateY(-50%);
                         z-index: 1; }
               body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-details {
+                width: 100%;
+                text-align: center;
                 font-size: 20px;
                 color: white;
-                font-family: Furore; }
+                padding-left: 30px;
+                font-family: Furore;
+                margin-bottom: -5px; }
   body .how_is_training {
     margin-top: 80px; }
     body .how_is_training .title {
@@ -1403,7 +1422,8 @@ body {
             body footer .row:nth-child(1) .section:nth-child(2) .messengers a img {
               height: 65%;
               width: auto;
-              display: block; }
+              display: block;
+              overflow: hidden; }
         body footer .row:nth-child(1) .section:nth-child(2) .politics {
           margin-top: 30px; }
           body footer .row:nth-child(1) .section:nth-child(2) .politics div {
@@ -2133,272 +2153,6 @@ body {
               body .teachers .teachers_slider #slider1 .slide .teacher_statistics .statistics .statistics_section .text {
                 margin-top: 20px;
                 font-size: 40px; }
-  body .participants {
-    margin-top: 50px; }
-    body .participants .title {
-      width: 100%;
-      padding: 0 10%;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      font-size: 50px; }
-    body .participants .participants_slider {
-      width: 100%; }
-      body .participants .participants_slider #slider2 {
-        width: 95%; }
-        body .participants .participants_slider #slider2 .owl-nav {
-          color: white; }
-          body .participants .participants_slider #slider2 .owl-nav .owl-prev, body .participants .participants_slider #slider2 .owl-nav .owl-next {
-            height: 70px;
-            position: absolute; }
-            body .participants .participants_slider #slider2 .owl-nav .owl-prev:hover, body .participants .participants_slider #slider2 .owl-nav .owl-next:hover {
-              background: transparent !important; }
-            body .participants .participants_slider #slider2 .owl-nav .owl-prev img, body .participants .participants_slider #slider2 .owl-nav .owl-next img {
-              height: 100%;
-              width: auto; }
-          body .participants .participants_slider #slider2 .owl-nav .owl-prev {
-            left: 0;
-            top: 37%;
-            -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
-          body .participants .participants_slider #slider2 .owl-nav .owl-next {
-            -webkit-transform: translateY(-50%) rotate(180deg);
-            transform: translateY(-50%) rotate(180deg);
-            right: 0;
-            top: 37%; }
-        body .participants .participants_slider #slider2 .slide {
-          width: 100%; }
-          body .participants .participants_slider #slider2 .slide .participants_section {
-            margin: 0 auto;
-            background: linear-gradient(145deg, #7422e6 0%, #db79a0 100%);
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-            padding: 20px 140px 80px 140px;
-            border-radius: 220px;
-            width: 780px; }
-            body .participants .participants_slider #slider2 .slide .participants_section .participant .photo {
-              margin: 0 auto;
-              width: 250px;
-              height: 250px;
-              border-radius: 50%;
-              overflow: hidden;
-              border: 4px solid white; }
-              body .participants .participants_slider #slider2 .slide .participants_section .participant .photo img {
-                height: 100%;
-                width: 100%;
-                -o-object-fit: cover;
-                object-fit: cover; }
-            body .participants .participants_slider #slider2 .slide .participants_section .participant .info {
-              margin-top: 20px;
-              text-align: center;
-              color: white; }
-              body .participants .participants_slider #slider2 .slide .participants_section .participant .info .name_and_surname {
-                margin-top: 5px;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                font-size: 50px; }
-                body .participants .participants_slider #slider2 .slide .participants_section .participant .info .name_and_surname .name {
-                  margin-right: 17px; }
-              body .participants .participants_slider #slider2 .slide .participants_section .participant .info .age {
-                margin-top: 14px;
-                font-size: 30px; }
-                body .participants .participants_slider #slider2 .slide .participants_section .participant .info .age span:nth-child(2) {
-                  margin: 0 10px; }
-              body .participants .participants_slider #slider2 .slide .participants_section .participant .info .skills {
-                font-size: 36px;
-                margin-top: 14px;
-                padding-bottom: 40px; }
-            body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer {
-              margin-top: 10px;
-              width: 100%; }
-              body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio {
-                width: 100%;
-                border: none;
-                background: transparent; }
-                body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist {
-                  /*панель*/
-                  /*список*/ }
-                  body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui {
-                    position: relative;
-                    height: auto;
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -ms-flex-wrap: wrap;
-                    flex-wrap: wrap; }
-                    body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls {
-                      padding: 0;
-                      width: 100%;
-                      display: -webkit-box;
-                      display: -ms-flexbox;
-                      display: flex;
-                      -webkit-box-pack: center;
-                      -ms-flex-pack: center;
-                      justify-content: center; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls button {
-                        background: transparent;
-                        border: none;
-                        color: white;
-                        font-size: 30px; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls .jp-play {
-                        font-size: 45px;
-                        padding: 0 15px; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls .jp-play .fa-pause {
-                          display: none; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls .jp-play.stop .fa-pause {
-                          display: block; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls .jp-play.stop .fa-play {
-                          display: none; }
-                    body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress {
-                      width: 100%;
-                      height: 50px;
-                      position: relative;
-                      display: -webkit-box;
-                      display: -ms-flexbox;
-                      display: flex;
-                      -webkit-box-pack: center;
-                      -ms-flex-pack: center;
-                      justify-content: center;
-                      -webkit-box-align: center;
-                      -ms-flex-align: center;
-                      align-items: center; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-time-holder {
-                        font-family: Furore;
-                        color: white;
-                        font-size: 15px !important;
-                        position: absolute;
-                        top: 0;
-                        display: -webkit-box;
-                        display: -ms-flexbox;
-                        display: flex;
-                        -webkit-box-pack: justify;
-                        -ms-flex-pack: justify;
-                        justify-content: space-between;
-                        width: 100%; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-time-holder .jp-current-time {
-                          font-style: normal !important; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-time-holder .jp-duration {
-                          font-style: normal !important; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-progress {
-                        width: 100%;
-                        height: 4px;
-                        background: white;
-                        cursor: pointer; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-progress .jp-seek-bar {
-                          height: 100%;
-                          width: 100%; }
-                          body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-progress .jp-seek-bar .jp-play-bar {
-                            height: 100%;
-                            background: black; }
-                    body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-volume-controls {
-                      top: 10px;
-                      right: 0;
-                      position: absolute;
-                      width: auto;
-                      display: -webkit-box;
-                      display: -ms-flexbox;
-                      display: flex;
-                      -webkit-box-align: center;
-                      -ms-flex-align: center;
-                      align-items: center; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-volume-controls button {
-                        background: transparent;
-                        border: none;
-                        color: white;
-                        font-size: 22px;
-                        padding-right: 10px; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-volume-controls .jp-volume-bar {
-                        cursor: pointer;
-                        background: white;
-                        height: 3px;
-                        width: 80px; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-volume-controls .jp-volume-bar .jp-volume-bar-value {
-                          height: 100%;
-                          background: black;
-                          position: relative; }
-                          body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-volume-controls .jp-volume-bar .jp-volume-bar-value:before {
-                            position: absolute;
-                            content: '';
-                            height: 10px;
-                            width: 10px;
-                            border-radius: 50%;
-                            background: black;
-                            top: 50%;
-                            right: -5px;
-                            -webkit-transform: translateY(-50%);
-                            transform: translateY(-50%); }
-                  body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-interface {
-                    background: transparent;
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-box-pack: justify;
-                    -ms-flex-pack: justify;
-                    justify-content: space-between;
-                    -webkit-box-align: center;
-                    -ms-flex-align: center;
-                    align-items: center; }
-                  body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist {
-                    background: transparent;
-                    border: none; }
-                    body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul {
-                      padding: 0; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul li {
-                        font-size: 26px;
-                        font-family: Furore;
-                        padding: 0;
-                        border: none; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul li.jp-playlist-current {
-                          list-style: none;
-                          padding: 0; }
-                          body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul li.jp-playlist-current div a {
-                            padding-left: 20px; }
-                            body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul li.jp-playlist-current div a:before {
-                              position: absolute;
-                              content: '';
-                              height: 4px;
-                              width: 20px;
-                              background: white;
-                              left: -20px;
-                              top: 50%;
-                              -webkit-transform: translateY(-50%);
-                              transform: translateY(-50%); }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul li div a {
-                          color: white;
-                          line-height: 45px;
-                          text-decoration: none;
-                          position: relative; }
-            body .participants .participants_slider #slider2 .slide .participants_section .messengers {
-              margin-top: 20px; }
-              body .participants .participants_slider #slider2 .slide .participants_section .messengers ul {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: end;
-                -ms-flex-pack: end;
-                justify-content: flex-end; }
-                body .participants .participants_slider #slider2 .slide .participants_section .messengers ul li a {
-                  font-size: 24px;
-                  color: white;
-                  display: -webkit-box;
-                  display: -ms-flexbox;
-                  display: flex;
-                  -webkit-box-align: center;
-                  -ms-flex-align: center;
-                  align-items: center;
-                  -webkit-box-pack: center;
-                  -ms-flex-pack: center;
-                  justify-content: center;
-                  margin: 0 5px;
-                  padding: 4px;
-                  height: 35px;
-                  width: 35px;
-                  border: 3px solid white;
-                  border-radius: 50%;
-                  text-decoration: none; }
   body .how_is_training .title {
     width: 100%;
     padding: 0 10%;
@@ -3019,104 +2773,6 @@ body {
               body .teachers .teachers_slider #slider1 .slide .teacher_statistics .statistics .statistics_section .text {
                 margin-top: 20px;
                 font-size: 35px; }
-  body .participants {
-    margin-top: 50px; }
-    body .participants .title {
-      width: 100%;
-      padding: 0 10%;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      font-size: 50px; }
-    body .participants .participants_slider {
-      width: 100%; }
-      body .participants .participants_slider #slider2 {
-        width: 95%; }
-        body .participants .participants_slider #slider2 .owl-nav {
-          color: white; }
-          body .participants .participants_slider #slider2 .owl-nav .owl-prev, body .participants .participants_slider #slider2 .owl-nav .owl-next {
-            height: 70px;
-            position: absolute; }
-            body .participants .participants_slider #slider2 .owl-nav .owl-prev:hover, body .participants .participants_slider #slider2 .owl-nav .owl-next:hover {
-              background: transparent !important; }
-            body .participants .participants_slider #slider2 .owl-nav .owl-prev img, body .participants .participants_slider #slider2 .owl-nav .owl-next img {
-              height: 100%;
-              width: auto; }
-          body .participants .participants_slider #slider2 .owl-nav .owl-prev {
-            left: 0;
-            top: 37%;
-            -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
-          body .participants .participants_slider #slider2 .owl-nav .owl-next {
-            -webkit-transform: translateY(-50%) rotate(180deg);
-            transform: translateY(-50%) rotate(180deg);
-            right: 0;
-            top: 37%; }
-        body .participants .participants_slider #slider2 .slide {
-          width: 100%; }
-          body .participants .participants_slider #slider2 .slide .participants_section {
-            margin: 0 auto;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-            padding: 40px 80px 50px 80px;
-            border-radius: 130px;
-            width: 600px; }
-            body .participants .participants_slider #slider2 .slide .participants_section .participant .photo {
-              margin: 0 auto;
-              width: 200px;
-              height: 200px;
-              border-radius: 50%;
-              overflow: hidden;
-              border: 4px solid white; }
-              body .participants .participants_slider #slider2 .slide .participants_section .participant .photo img {
-                height: 100%;
-                width: 100%;
-                -o-object-fit: cover;
-                object-fit: cover; }
-            body .participants .participants_slider #slider2 .slide .participants_section .participant .info {
-              margin-top: 20px;
-              text-align: center;
-              color: white; }
-              body .participants .participants_slider #slider2 .slide .participants_section .participant .info .name_and_surname {
-                font-size: 40px; }
-                body .participants .participants_slider #slider2 .slide .participants_section .participant .info .name_and_surname .name {
-                  margin-right: 17px; }
-              body .participants .participants_slider #slider2 .slide .participants_section .participant .info .age {
-                margin-top: 14px;
-                font-size: 30px; }
-                body .participants .participants_slider #slider2 .slide .participants_section .participant .info .age span:nth-child(2) {
-                  margin: 0 10px; }
-              body .participants .participants_slider #slider2 .slide .participants_section .participant .info .skills {
-                font-size: 30px;
-                margin-top: 14px;
-                padding-bottom: 40px; }
-            body .participants .participants_slider #slider2 .slide .participants_section .messengers {
-              margin-top: 20px; }
-              body .participants .participants_slider #slider2 .slide .participants_section .messengers ul {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: end;
-                -ms-flex-pack: end;
-                justify-content: flex-end; }
-                body .participants .participants_slider #slider2 .slide .participants_section .messengers ul li a {
-                  font-size: 24px;
-                  color: white;
-                  display: -webkit-box;
-                  display: -ms-flexbox;
-                  display: flex;
-                  -webkit-box-align: center;
-                  -ms-flex-align: center;
-                  align-items: center;
-                  -webkit-box-pack: center;
-                  -ms-flex-pack: center;
-                  justify-content: center;
-                  margin: 0 5px;
-                  padding: 4px;
-                  height: 35px;
-                  width: 35px;
-                  border: 3px solid white;
-                  border-radius: 50%;
-                  text-decoration: none; }
   body .how_is_training .title {
     width: 100%;
     padding: 0 10%;
@@ -3409,239 +3065,166 @@ body {
     body .participants .title {
       font-size: 35px; }
     body .participants .participants_slider {
-      width: 100%; }
-      body .participants .participants_slider #slider2 {
-        width: 95%; }
-        body .participants .participants_slider #slider2 .owl-nav .owl-prev {
-          left: -10px; }
-        body .participants .participants_slider #slider2 .owl-nav .owl-next {
-          right: -10px; }
-        body .participants .participants_slider #slider2 .slide {
-          width: 100%; }
-          body .participants .participants_slider #slider2 .slide .participants_section {
-            margin: 0 auto;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-            padding: 40px 80px 50px 80px;
-            border-radius: 130px;
-            width: 525px; }
-            body .participants .participants_slider #slider2 .slide .participants_section .participant .photo {
-              margin: 0 auto;
+      margin-top: 30px;
+      /*_____СТРЕЛКИ________*/ }
+      body .participants .participants_slider .slick-prev, body .participants .participants_slider .slick-next {
+        z-index: 1;
+        height: 70px;
+        width: 70px;
+        background: url("../img/icons/arrow_white.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center; }
+        body .participants .participants_slider .slick-prev:before, body .participants .participants_slider .slick-next:before {
+          display: none; }
+      body .participants .participants_slider .slick-next {
+        -webkit-transform: translate(0, -50%) rotate(180deg);
+        transform: translate(0, -50%) rotate(180deg); }
+      body .participants .participants_slider .slick-list .slick-track .slide {
+        width: 100%;
+        height: auto; }
+        body .participants .participants_slider .slick-list .slick-track .slide .participants_section {
+          padding: 20px 60px 40px 60px;
+          border-radius: 170px;
+          width: 600px;
+          height: auto; }
+          body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant {
+            padding-bottom: 15px; }
+            body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .photo {
               width: 200px;
-              height: 200px;
-              border-radius: 50%;
-              overflow: hidden;
-              border: 4px solid white; }
-              body .participants .participants_slider #slider2 .slide .participants_section .participant .photo img {
-                height: 100%;
-                width: 100%;
-                -o-object-fit: cover;
-                object-fit: cover; }
-            body .participants .participants_slider #slider2 .slide .participants_section .participant .info {
+              height: 200px; }
+            body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info {
               margin-top: 20px;
               text-align: center;
               color: white; }
-              body .participants .participants_slider #slider2 .slide .participants_section .participant .info .name_and_surname {
-                font-size: 40px; }
-                body .participants .participants_slider #slider2 .slide .participants_section .participant .info .name_and_surname .name {
-                  margin-right: 17px; }
-              body .participants .participants_slider #slider2 .slide .participants_section .participant .info .age {
-                margin-top: 14px;
-                font-size: 26px; }
-                body .participants .participants_slider #slider2 .slide .participants_section .participant .info .age span:nth-child(2) {
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .name_and_surname {
+                font-size: 34px; }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .name_and_surname .name {
+                  margin-right: 14px; }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .age {
+                margin-top: 10px;
+                font-size: 24px; }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .age span:nth-child(2) {
                   margin: 0 10px; }
-              body .participants .participants_slider #slider2 .slide .participants_section .participant .info .skills {
-                font-size: 22px;
-                margin-top: 14px;
-                padding-bottom: 40px; }
-            body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer {
-              margin-top: 10px;
-              width: 100%; }
-              body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio {
-                width: 100%;
-                border: none;
-                background: transparent; }
-                body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist {
-                  /*панель*/
-                  /*список*/ }
-                  body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui {
-                    position: relative;
-                    height: auto;
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .skills {
+                font-size: 24px;
+                margin-top: 10px; }
+          body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer {
+            margin-top: 10px;
+            width: 100%; }
+            body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio {
+              width: 100%;
+              border: none;
+              background: transparent;
+              padding: 6px 0;
+              /*название*/ }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio:last-child .jp-type-single {
+                /*звук*/ }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio:last-child .jp-type-single .jp-volume-controls {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex; }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single {
+                /*таймер*/
+                /*звук*/ }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface {
+                  background: transparent;
+                  height: 25px;
+                  margin-right: 30px; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder {
                     display: -webkit-box;
                     display: -ms-flexbox;
                     display: flex;
-                    -ms-flex-wrap: wrap;
-                    flex-wrap: wrap; }
-                    body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls {
-                      padding: 0;
-                      width: 100%;
-                      display: -webkit-box;
-                      display: -ms-flexbox;
-                      display: flex;
-                      -webkit-box-pack: center;
-                      -ms-flex-pack: center;
-                      justify-content: center; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls button {
-                        background: transparent;
-                        border: none;
-                        color: white;
-                        font-size: 30px; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls .jp-play {
-                        font-size: 45px;
-                        padding: 0 15px; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls .jp-play .fa-pause {
-                          display: none; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls .jp-play.stop .fa-pause {
-                          display: block; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls .jp-play.stop .fa-play {
-                          display: none; }
-                    body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress {
-                      width: 100%;
-                      height: 50px;
-                      position: relative;
-                      display: -webkit-box;
-                      display: -ms-flexbox;
-                      display: flex;
-                      -webkit-box-pack: center;
-                      -ms-flex-pack: center;
-                      justify-content: center;
-                      -webkit-box-align: center;
-                      -ms-flex-align: center;
-                      align-items: center; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-time-holder {
-                        font-family: Furore;
-                        color: white;
-                        font-size: 15px !important;
-                        position: absolute;
-                        top: 0;
-                        display: -webkit-box;
-                        display: -ms-flexbox;
-                        display: flex;
-                        -webkit-box-pack: justify;
-                        -ms-flex-pack: justify;
-                        justify-content: space-between;
-                        width: 100%; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-time-holder .jp-current-time {
-                          font-style: normal !important; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-time-holder .jp-duration {
-                          font-style: normal !important; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-progress {
-                        width: 100%;
-                        height: 4px;
-                        background: white;
-                        cursor: pointer; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-progress .jp-seek-bar {
-                          height: 100%;
-                          width: 100%; }
-                          body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-progress .jp-seek-bar .jp-play-bar {
-                            height: 100%;
-                            background: black; }
-                    body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-volume-controls {
-                      top: 10px;
-                      right: 0;
-                      position: absolute;
-                      width: auto;
-                      display: -webkit-box;
-                      display: -ms-flexbox;
-                      display: flex;
-                      -webkit-box-align: center;
-                      -ms-flex-align: center;
-                      align-items: center; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-volume-controls button {
-                        background: transparent;
-                        border: none;
-                        color: white;
-                        font-size: 20px;
-                        padding-right: 8px; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-volume-controls .jp-volume-bar {
-                        cursor: pointer;
-                        background: white;
-                        height: 3px;
-                        width: 60px; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-volume-controls .jp-volume-bar .jp-volume-bar-value {
-                          height: 100%;
-                          background: black;
-                          position: relative; }
-                          body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-volume-controls .jp-volume-bar .jp-volume-bar-value:before {
-                            position: absolute;
-                            content: '';
-                            height: 10px;
-                            width: 10px;
-                            border-radius: 50%;
-                            background: black;
-                            top: 50%;
-                            right: -5px;
-                            -webkit-transform: translateY(-50%);
-                            transform: translateY(-50%); }
-                  body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-interface {
-                    background: transparent;
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-box-pack: justify;
-                    -ms-flex-pack: justify;
-                    justify-content: space-between;
                     -webkit-box-align: center;
                     -ms-flex-align: center;
-                    align-items: center; }
-                  body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist {
-                    background: transparent;
-                    border: none; }
-                    body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul {
-                      padding: 0; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul li {
-                        font-size: 26px;
-                        font-family: Furore;
-                        padding: 0;
-                        border: none; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul li.jp-playlist-current {
-                          list-style: none;
-                          padding: 0; }
-                          body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul li.jp-playlist-current div a {
-                            padding-left: 20px; }
-                            body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul li.jp-playlist-current div a:before {
-                              position: absolute;
-                              content: '';
-                              height: 4px;
-                              width: 20px;
-                              background: white;
-                              left: -20px;
-                              top: 50%;
-                              -webkit-transform: translateY(-50%);
-                              transform: translateY(-50%); }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul li div a {
-                          color: white;
-                          line-height: 45px;
-                          text-decoration: none;
-                          position: relative; }
-            body .participants .participants_slider #slider2 .slide .participants_section .messengers {
-              margin-top: 20px; }
-              body .participants .participants_slider #slider2 .slide .participants_section .messengers ul {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: end;
-                -ms-flex-pack: end;
-                justify-content: flex-end; }
-                body .participants .participants_slider #slider2 .slide .participants_section .messengers ul li a {
-                  font-size: 24px;
-                  color: white;
+                    align-items: center;
+                    height: 40px;
+                    /*дорожка*/ }
+                    body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-controls .jp-stop, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-controls .jp-stop {
+                      display: none; }
+                    body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress {
+                      width: 100%;
+                      background: none;
+                      height: 6px;
+                      cursor: pointer;
+                      border-radius: 5px;
+                      overflow: hidden;
+                      margin-left: 10px; }
+                      body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress .jp-seek-bar, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress .jp-seek-bar {
+                        height: 100%;
+                        width: 100%;
+                        background: white; }
+                        body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress .jp-seek-bar .jp-play-bar, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress .jp-seek-bar .jp-play-bar {
+                          height: 100%;
+                          background: #671ecf;
+                          border-radius: 0 4px 4px 0; }
+                    body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-toggles, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-toggles {
+                      display: none !important; }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .timers_aud {
+                  margin-left: 87px;
+                  margin-right: 32px;
+                  height: 15px;
+                  max-width: 100%;
                   display: -webkit-box;
                   display: -ms-flexbox;
                   display: flex;
+                  -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                  justify-content: space-between; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .timers_aud .jp-current-time, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .timers_aud .jp-duration {
+                    font-size: 12px;
+                    color: white;
+                    font-family: Furore; }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls {
+                  width: 100%;
+                  display: none;
                   -webkit-box-align: center;
                   -ms-flex-align: center;
                   align-items: center;
-                  -webkit-box-pack: center;
-                  -ms-flex-pack: center;
-                  justify-content: center;
-                  margin: 0 5px;
-                  padding: 4px;
-                  height: 35px;
-                  width: 35px;
-                  border: 3px solid white;
-                  border-radius: 50%;
-                  text-decoration: none; }
+                  margin-top: 20px;
+                  margin-left: 45px; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-mute {
+                    color: white;
+                    display: none; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-volume-max {
+                    display: none !important; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .vol_fa_ico {
+                    margin-right: 10px;
+                    color: white; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar {
+                    background: white;
+                    padding: 0;
+                    position: relative;
+                    height: 3px;
+                    width: 100px;
+                    overflow: visible;
+                    cursor: pointer; }
+                    body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar .jp-volume-bar-value {
+                      background: #671ecf;
+                      position: relative;
+                      height: 100%; }
+                      body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar .jp-volume-bar-value:before {
+                        position: absolute;
+                        content: '';
+                        background: white;
+                        width: 5px;
+                        height: 5px;
+                        border: 3px solid #671ecf;
+                        display: block;
+                        right: -5px;
+                        top: 50%;
+                        border-radius: 50%;
+                        -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                        z-index: 1; }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-details {
+                width: 100%;
+                text-align: center;
+                font-size: 18px;
+                color: white;
+                padding-left: 30px;
+                font-family: Furore;
+                margin-bottom: -5px; }
   body .how_is_training .title {
     font-size: 35px; }
   body .how_is_training .sequence .step {
@@ -4013,240 +3596,175 @@ body {
   body .participants {
     margin-top: 50px; }
     body .participants .title {
-      font-size: 35px; }
+      font-size: 35px;
+      width: 90%;
+      margin: 0 auto; }
     body .participants .participants_slider {
-      width: 100%; }
-      body .participants .participants_slider #slider2 {
-        width: 95%; }
-        body .participants .participants_slider #slider2 .owl-nav .owl-prev {
-          top: 50%;
-          left: -10px; }
-        body .participants .participants_slider #slider2 .owl-nav .owl-next {
-          top: 50%;
-          right: -10px; }
-        body .participants .participants_slider #slider2 .slide {
-          width: 100%; }
-          body .participants .participants_slider #slider2 .slide .participants_section {
-            padding: 20px 40px 30px 40px;
-            border-radius: 60px;
-            width: 90%; }
-            body .participants .participants_slider #slider2 .slide .participants_section .participant .photo {
-              margin: 0 auto;
+      margin-top: 30px;
+      width: 88% !important;
+      /*_____СТРЕЛКИ________*/ }
+      body .participants .participants_slider .slick-prev, body .participants .participants_slider .slick-next {
+        z-index: 1;
+        height: 70px;
+        width: 70px;
+        background: url("../img/icons/arrow_white.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center; }
+        body .participants .participants_slider .slick-prev:before, body .participants .participants_slider .slick-next:before {
+          display: none; }
+      body .participants .participants_slider .slick-next {
+        -webkit-transform: translate(0, -50%) rotate(180deg);
+        transform: translate(0, -50%) rotate(180deg); }
+      body .participants .participants_slider .slick-list .slick-track .slide {
+        width: 100%;
+        height: auto; }
+        body .participants .participants_slider .slick-list .slick-track .slide .participants_section {
+          padding: 20px 30px 30px 30px;
+          border-radius: 100px;
+          width: 450px;
+          height: auto; }
+          body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant {
+            padding-bottom: 15px; }
+            body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .photo {
               width: 200px;
-              height: 200px;
-              border-radius: 50%;
-              overflow: hidden;
-              border: 4px solid white; }
-              body .participants .participants_slider #slider2 .slide .participants_section .participant .photo img {
-                height: 100%;
-                width: 100%;
-                -o-object-fit: cover;
-                object-fit: cover; }
-            body .participants .participants_slider #slider2 .slide .participants_section .participant .info {
-              margin-top: 20px;
+              height: 200px; }
+            body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info {
+              margin-top: 10px;
               text-align: center;
               color: white; }
-              body .participants .participants_slider #slider2 .slide .participants_section .participant .info .name_and_surname {
-                font-size: 40px; }
-                body .participants .participants_slider #slider2 .slide .participants_section .participant .info .name_and_surname .name {
-                  margin-right: 17px; }
-              body .participants .participants_slider #slider2 .slide .participants_section .participant .info .age {
-                margin-top: 14px;
-                font-size: 26px; }
-                body .participants .participants_slider #slider2 .slide .participants_section .participant .info .age span:nth-child(2) {
-                  margin: 0 10px; }
-              body .participants .participants_slider #slider2 .slide .participants_section .participant .info .skills {
-                font-size: 22px;
-                margin-top: 14px;
-                padding-bottom: 40px; }
-            body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer {
-              margin-top: 10px;
-              width: 100%; }
-              body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio {
-                width: 100%;
-                border: none;
-                background: transparent; }
-                body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist {
-                  /*панель*/
-                  /*список*/ }
-                  body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui {
-                    position: relative;
-                    height: auto;
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .name_and_surname {
+                font-size: 24px;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column; }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .name_and_surname .name {
+                  margin-right: 0; }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .age {
+                margin-top: 10px;
+                font-size: 16px; }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .age span:nth-child(2) {
+                  margin: 0 6px; }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .skills {
+                font-size: 16px;
+                margin-top: 10px; }
+          body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer {
+            margin-top: 0;
+            max-width: 100%;
+            width: auto;
+            margin-right: 40px; }
+            body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio {
+              width: 100%;
+              border: none;
+              background: transparent;
+              padding: 6px 0;
+              /*название*/ }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio:last-child .jp-type-single {
+                /*звук*/ }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio:last-child .jp-type-single .jp-volume-controls {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex; }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single {
+                /*таймер*/
+                /*звук*/ }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface {
+                  background: transparent;
+                  height: 25px;
+                  margin-right: 30px; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder {
                     display: -webkit-box;
                     display: -ms-flexbox;
                     display: flex;
-                    -ms-flex-wrap: wrap;
-                    flex-wrap: wrap; }
-                    body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls {
-                      padding: 0;
-                      width: 100%;
-                      display: -webkit-box;
-                      display: -ms-flexbox;
-                      display: flex;
-                      -webkit-box-pack: center;
-                      -ms-flex-pack: center;
-                      justify-content: center; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls button {
-                        background: transparent;
-                        border: none;
-                        color: white;
-                        font-size: 30px; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls .jp-play {
-                        font-size: 45px;
-                        padding: 0 15px; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls .jp-play .fa-pause {
-                          display: none; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls .jp-play.stop .fa-pause {
-                          display: block; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls .jp-play.stop .fa-play {
-                          display: none; }
-                    body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress {
-                      width: 100%;
-                      height: 50px;
-                      position: relative;
-                      display: -webkit-box;
-                      display: -ms-flexbox;
-                      display: flex;
-                      -webkit-box-pack: center;
-                      -ms-flex-pack: center;
-                      justify-content: center;
-                      -webkit-box-align: center;
-                      -ms-flex-align: center;
-                      align-items: center; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-time-holder {
-                        font-family: Furore;
-                        color: white;
-                        font-size: 15px !important;
-                        position: absolute;
-                        top: 0;
-                        display: -webkit-box;
-                        display: -ms-flexbox;
-                        display: flex;
-                        -webkit-box-pack: justify;
-                        -ms-flex-pack: justify;
-                        justify-content: space-between;
-                        width: 100%; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-time-holder .jp-current-time {
-                          font-style: normal !important; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-time-holder .jp-duration {
-                          font-style: normal !important; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-progress {
-                        width: 100%;
-                        height: 4px;
-                        background: white;
-                        cursor: pointer; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-progress .jp-seek-bar {
-                          height: 100%;
-                          width: 100%; }
-                          body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-progress .jp-seek-bar .jp-play-bar {
-                            height: 100%;
-                            background: black; }
-                    body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-volume-controls {
-                      top: 10px;
-                      right: 0;
-                      position: absolute;
-                      width: auto;
-                      display: -webkit-box;
-                      display: -ms-flexbox;
-                      display: flex;
-                      -webkit-box-align: center;
-                      -ms-flex-align: center;
-                      align-items: center; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-volume-controls button {
-                        background: transparent;
-                        border: none;
-                        color: white;
-                        font-size: 20px;
-                        padding-right: 8px; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-volume-controls .jp-volume-bar {
-                        cursor: pointer;
-                        background: white;
-                        height: 3px;
-                        width: 60px; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-volume-controls .jp-volume-bar .jp-volume-bar-value {
-                          height: 100%;
-                          background: black;
-                          position: relative; }
-                          body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-volume-controls .jp-volume-bar .jp-volume-bar-value:before {
-                            position: absolute;
-                            content: '';
-                            height: 10px;
-                            width: 10px;
-                            border-radius: 50%;
-                            background: black;
-                            top: 50%;
-                            right: -5px;
-                            -webkit-transform: translateY(-50%);
-                            transform: translateY(-50%); }
-                  body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-interface {
-                    background: transparent;
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-box-pack: justify;
-                    -ms-flex-pack: justify;
-                    justify-content: space-between;
                     -webkit-box-align: center;
                     -ms-flex-align: center;
-                    align-items: center; }
-                  body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist {
-                    background: transparent;
-                    border: none; }
-                    body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul {
-                      padding: 0; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul li {
-                        font-size: 26px;
-                        font-family: Furore;
-                        padding: 0;
-                        border: none; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul li.jp-playlist-current {
-                          list-style: none;
-                          padding: 0; }
-                          body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul li.jp-playlist-current div a {
-                            padding-left: 20px; }
-                            body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul li.jp-playlist-current div a:before {
-                              position: absolute;
-                              content: '';
-                              height: 4px;
-                              width: 20px;
-                              background: white;
-                              left: -20px;
-                              top: 50%;
-                              -webkit-transform: translateY(-50%);
-                              transform: translateY(-50%); }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul li div a {
-                          color: white;
-                          line-height: 45px;
-                          text-decoration: none;
-                          position: relative; }
-            body .participants .participants_slider #slider2 .slide .participants_section .messengers {
-              margin-top: 20px; }
-              body .participants .participants_slider #slider2 .slide .participants_section .messengers ul {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: end;
-                -ms-flex-pack: end;
-                justify-content: flex-end; }
-                body .participants .participants_slider #slider2 .slide .participants_section .messengers ul li a {
-                  font-size: 24px;
-                  color: white;
+                    align-items: center;
+                    height: 40px;
+                    /*дорожка*/ }
+                    body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress {
+                      width: 100%;
+                      background: none;
+                      height: 6px;
+                      cursor: pointer;
+                      border-radius: 5px;
+                      overflow: hidden;
+                      margin-left: 10px; }
+                      body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress .jp-seek-bar, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress .jp-seek-bar {
+                        height: 100%;
+                        width: 100%;
+                        background: white; }
+                        body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress .jp-seek-bar .jp-play-bar, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress .jp-seek-bar .jp-play-bar {
+                          height: 100%;
+                          background: #671ecf;
+                          border-radius: 0 4px 4px 0; }
+                    body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-toggles, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-toggles {
+                      display: none !important; }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .timers_aud {
+                  margin-left: 82px;
+                  margin-right: 3px;
+                  height: 15px;
+                  max-width: 100%;
                   display: -webkit-box;
                   display: -ms-flexbox;
                   display: flex;
+                  -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                  justify-content: space-between; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .timers_aud .jp-current-time, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .timers_aud .jp-duration {
+                    font-size: 9px;
+                    color: white;
+                    font-family: Furore; }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls {
+                  width: 100%;
+                  display: none;
                   -webkit-box-align: center;
                   -ms-flex-align: center;
                   align-items: center;
-                  -webkit-box-pack: center;
-                  -ms-flex-pack: center;
-                  justify-content: center;
-                  margin: 0 5px;
-                  padding: 4px;
-                  height: 35px;
-                  width: 35px;
-                  border: 3px solid white;
-                  border-radius: 50%;
-                  text-decoration: none; }
+                  margin-top: 10px;
+                  margin-left: 45px; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-mute {
+                    color: white;
+                    display: none; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-volume-max {
+                    display: none !important; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .vol_fa_ico {
+                    margin-right: 10px;
+                    color: white; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar {
+                    background: white;
+                    padding: 0;
+                    position: relative;
+                    height: 3px;
+                    width: 100px;
+                    overflow: visible;
+                    cursor: pointer; }
+                    body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar .jp-volume-bar-value {
+                      background: #671ecf;
+                      position: relative;
+                      height: 100%; }
+                      body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar .jp-volume-bar-value:before {
+                        position: absolute;
+                        content: '';
+                        background: white;
+                        width: 5px;
+                        height: 5px;
+                        border: 3px solid #671ecf;
+                        display: block;
+                        right: -5px;
+                        top: 50%;
+                        border-radius: 50%;
+                        -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                        z-index: 1; }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-details {
+                width: 100%;
+                text-align: center;
+                font-size: 12px;
+                color: white;
+                padding-left: 30px;
+                font-family: Furore;
+                margin-bottom: -10px; }
   body .how_is_training .title {
     font-size: 35px; }
   body .how_is_training .sequence {
@@ -4838,8 +4356,9 @@ body {
           -webkit-box-sizing: border-box;
           box-sizing: border-box;
           padding: 10px;
-          border-radius: 30px;
-          width: 90%; }
+          border-radius: 50px;
+          width: 90%;
+          max-width: 400px; }
           body .teachers .teachers_slider #slider1 .slide .teacher_section .teacher {
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
@@ -4877,11 +4396,13 @@ body {
             width: auto;
             margin-top: 30px; }
             body .teachers .teachers_slider #slider1 .slide .teacher_section .buttons button {
+              margin: 0 auto;
+              max-width: 250px;
               padding: 10px;
               font-size: 12px;
               margin-bottom: 15px; }
               body .teachers .teachers_slider #slider1 .slide .teacher_section .buttons button:nth-child(1) {
-                margin-right: 0;
+                margin-right: auto;
                 margin-bottom: 20px; }
         body .teachers .teachers_slider #slider1 .slide .teacher_statistics {
           margin-top: 30px; }
@@ -4901,245 +4422,166 @@ body {
     body .participants .title {
       font-size: 18px; }
     body .participants .participants_slider {
-      width: 100%;
-      margin-top: 20px; }
-      body .participants .participants_slider #slider2 {
-        width: 95%; }
-        body .participants .participants_slider #slider2 .owl-nav .owl-prev {
-          top: 40%;
-          left: -10px;
-          height: 40px; }
-        body .participants .participants_slider #slider2 .owl-nav .owl-next {
-          top: 40%;
-          right: -10px;
-          height: 40px; }
-        body .participants .participants_slider #slider2 .slide {
-          width: 100%; }
-          body .participants .participants_slider #slider2 .slide .participants_section {
-            padding: 20px 40px 30px 40px;
-            border-radius: 60px;
-            width: 90%; }
-            body .participants .participants_slider #slider2 .slide .participants_section .participant .photo {
-              margin: 0 auto;
-              width: 200px;
-              height: 200px;
-              border-radius: 50%;
-              overflow: hidden;
-              border: 4px solid white; }
-              body .participants .participants_slider #slider2 .slide .participants_section .participant .photo img {
-                height: 100%;
-                width: 100%;
-                -o-object-fit: cover;
-                object-fit: cover; }
-            body .participants .participants_slider #slider2 .slide .participants_section .participant .info {
-              margin-top: 20px;
+      margin-top: 30px;
+      width: 88% !important;
+      /*_____СТРЕЛКИ________*/ }
+      body .participants .participants_slider .slick-prev, body .participants .participants_slider .slick-next {
+        height: 40px;
+        width: 40px; }
+        body .participants .participants_slider .slick-prev:before, body .participants .participants_slider .slick-next:before {
+          display: none; }
+      body .participants .participants_slider .slick-next {
+        -webkit-transform: translate(0, -50%) rotate(180deg);
+        transform: translate(0, -50%) rotate(180deg); }
+      body .participants .participants_slider .slick-list .slick-track .slide {
+        width: 100%;
+        height: auto; }
+        body .participants .participants_slider .slick-list .slick-track .slide .participants_section {
+          padding: 20px 30px 30px 30px;
+          border-radius: 50px;
+          width: 360px;
+          height: auto; }
+          body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant {
+            padding-bottom: 15px; }
+            body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .photo {
+              width: 100px;
+              height: 100px; }
+            body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info {
+              margin-top: 10px;
               text-align: center;
               color: white; }
-              body .participants .participants_slider #slider2 .slide .participants_section .participant .info .name_and_surname {
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .name_and_surname {
                 font-size: 24px;
                 -webkit-box-orient: vertical;
                 -webkit-box-direction: normal;
                 -ms-flex-direction: column;
                 flex-direction: column; }
-                body .participants .participants_slider #slider2 .slide .participants_section .participant .info .name_and_surname .name {
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .name_and_surname .name {
                   margin-right: 0; }
-              body .participants .participants_slider #slider2 .slide .participants_section .participant .info .age {
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .age {
                 margin-top: 10px;
-                font-size: 20px; }
-                body .participants .participants_slider #slider2 .slide .participants_section .participant .info .age span:nth-child(2) {
-                  margin: 0 10px; }
-              body .participants .participants_slider #slider2 .slide .participants_section .participant .info .skills {
-                font-size: 14px;
-                margin-top: 10px;
-                padding-bottom: 40px; }
-            body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer {
-              margin-top: 10px;
-              width: 100%; }
-              body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio {
-                width: 100%;
-                border: none;
-                background: transparent; }
-                body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist {
-                  /*панель*/
-                  /*список*/ }
-                  body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui {
-                    position: relative;
-                    height: auto;
+                font-size: 16px; }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .age span:nth-child(2) {
+                  margin: 0 6px; }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .skills {
+                font-size: 16px;
+                margin-top: 10px; }
+          body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer {
+            margin-top: 0;
+            max-width: 100%;
+            width: auto;
+            margin-right: 40px; }
+            body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio {
+              width: 100%;
+              border: none;
+              background: transparent;
+              padding: 6px 0;
+              /*название*/ }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio:last-child .jp-type-single {
+                /*звук*/ }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio:last-child .jp-type-single .jp-volume-controls {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex; }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single {
+                /*таймер*/
+                /*звук*/ }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface {
+                  background: transparent;
+                  height: 25px;
+                  margin-right: 30px; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder {
                     display: -webkit-box;
                     display: -ms-flexbox;
                     display: flex;
-                    -ms-flex-wrap: wrap;
-                    flex-wrap: wrap; }
-                    body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls {
-                      padding: 0;
-                      width: 100%;
-                      display: -webkit-box;
-                      display: -ms-flexbox;
-                      display: flex;
-                      -webkit-box-pack: center;
-                      -ms-flex-pack: center;
-                      justify-content: center; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls button {
-                        background: transparent;
-                        border: none;
-                        color: white;
-                        font-size: 30px; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls .jp-play {
-                        font-size: 45px;
-                        padding: 0 15px; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls .jp-play .fa-pause {
-                          display: none; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls .jp-play.stop .fa-pause {
-                          display: block; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-controls .jp-play.stop .fa-play {
-                          display: none; }
-                    body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress {
-                      width: 100%;
-                      height: 50px;
-                      position: relative;
-                      display: -webkit-box;
-                      display: -ms-flexbox;
-                      display: flex;
-                      -webkit-box-pack: center;
-                      -ms-flex-pack: center;
-                      justify-content: center;
-                      -webkit-box-align: center;
-                      -ms-flex-align: center;
-                      align-items: center; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-time-holder {
-                        font-family: Furore;
-                        color: white;
-                        font-size: 15px !important;
-                        position: absolute;
-                        top: 0;
-                        display: -webkit-box;
-                        display: -ms-flexbox;
-                        display: flex;
-                        -webkit-box-pack: justify;
-                        -ms-flex-pack: justify;
-                        justify-content: space-between;
-                        width: 100%; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-time-holder .jp-current-time {
-                          font-style: normal !important; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-time-holder .jp-duration {
-                          font-style: normal !important; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-progress {
-                        width: 100%;
-                        height: 4px;
-                        background: white;
-                        cursor: pointer; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-progress .jp-seek-bar {
-                          height: 100%;
-                          width: 100%; }
-                          body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .progress .jp-progress .jp-seek-bar .jp-play-bar {
-                            height: 100%;
-                            background: black; }
-                    body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-volume-controls {
-                      top: 10px;
-                      right: 0;
-                      position: absolute;
-                      width: auto;
-                      display: -webkit-box;
-                      display: -ms-flexbox;
-                      display: flex;
-                      -webkit-box-align: center;
-                      -ms-flex-align: center;
-                      align-items: center; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-volume-controls button {
-                        background: transparent;
-                        border: none;
-                        color: white;
-                        font-size: 20px;
-                        padding-right: 8px; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-volume-controls .jp-volume-bar {
-                        cursor: pointer;
-                        background: white;
-                        height: 3px;
-                        width: 60px; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-volume-controls .jp-volume-bar .jp-volume-bar-value {
-                          height: 100%;
-                          background: black;
-                          position: relative; }
-                          body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-gui .jp-volume-controls .jp-volume-bar .jp-volume-bar-value:before {
-                            position: absolute;
-                            content: '';
-                            height: 10px;
-                            width: 10px;
-                            border-radius: 50%;
-                            background: black;
-                            top: 50%;
-                            right: -5px;
-                            -webkit-transform: translateY(-50%);
-                            transform: translateY(-50%); }
-                  body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-interface {
-                    background: transparent;
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-box-pack: justify;
-                    -ms-flex-pack: justify;
-                    justify-content: space-between;
                     -webkit-box-align: center;
                     -ms-flex-align: center;
-                    align-items: center; }
-                  body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist {
-                    background: transparent;
-                    border: none; }
-                    body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul {
-                      padding: 0; }
-                      body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul li {
-                        font-size: 26px;
-                        font-family: Furore;
-                        padding: 0;
-                        border: none; }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul li.jp-playlist-current {
-                          list-style: none;
-                          padding: 0; }
-                          body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul li.jp-playlist-current div a {
-                            padding-left: 20px; }
-                            body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul li.jp-playlist-current div a:before {
-                              position: absolute;
-                              content: '';
-                              height: 4px;
-                              width: 20px;
-                              background: white;
-                              left: -20px;
-                              top: 50%;
-                              -webkit-transform: translateY(-50%);
-                              transform: translateY(-50%); }
-                        body .participants .participants_slider #slider2 .slide .participants_section .slider_audioplayer .jp-audio .jp-type-playlist .jp-playlist ul li div a {
-                          color: white;
-                          line-height: 45px;
-                          text-decoration: none;
-                          position: relative; }
-            body .participants .participants_slider #slider2 .slide .participants_section .messengers {
-              margin-top: 20px; }
-              body .participants .participants_slider #slider2 .slide .participants_section .messengers ul {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: end;
-                -ms-flex-pack: end;
-                justify-content: flex-end; }
-                body .participants .participants_slider #slider2 .slide .participants_section .messengers ul li a {
-                  font-size: 24px;
-                  color: white;
+                    align-items: center;
+                    height: 40px;
+                    /*дорожка*/ }
+                    body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress {
+                      width: 100%;
+                      background: none;
+                      height: 6px;
+                      cursor: pointer;
+                      border-radius: 5px;
+                      overflow: hidden;
+                      margin-left: 10px; }
+                      body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress .jp-seek-bar, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress .jp-seek-bar {
+                        height: 100%;
+                        width: 100%;
+                        background: white; }
+                        body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress .jp-seek-bar .jp-play-bar, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress .jp-seek-bar .jp-play-bar {
+                          height: 100%;
+                          background: #671ecf;
+                          border-radius: 0 4px 4px 0; }
+                    body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-toggles, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-toggles {
+                      display: none !important; }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .timers_aud {
+                  margin-left: 82px;
+                  margin-right: 3px;
+                  height: 15px;
+                  max-width: 100%;
                   display: -webkit-box;
                   display: -ms-flexbox;
                   display: flex;
+                  -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                  justify-content: space-between; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .timers_aud .jp-current-time, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .timers_aud .jp-duration {
+                    font-size: 9px;
+                    color: white;
+                    font-family: Furore; }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls {
+                  width: 100%;
+                  display: none;
                   -webkit-box-align: center;
                   -ms-flex-align: center;
                   align-items: center;
-                  -webkit-box-pack: center;
-                  -ms-flex-pack: center;
-                  justify-content: center;
-                  margin: 0 5px;
-                  padding: 4px;
-                  height: 35px;
-                  width: 35px;
-                  border: 3px solid white;
-                  border-radius: 50%;
-                  text-decoration: none; }
+                  margin-top: 10px;
+                  margin-left: 45px; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-mute {
+                    color: white;
+                    display: none; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-volume-max {
+                    display: none !important; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .vol_fa_ico {
+                    margin-right: 10px;
+                    color: white; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar {
+                    background: white;
+                    padding: 0;
+                    position: relative;
+                    height: 3px;
+                    width: 100px;
+                    overflow: visible;
+                    cursor: pointer; }
+                    body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar .jp-volume-bar-value {
+                      background: #671ecf;
+                      position: relative;
+                      height: 100%; }
+                      body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar .jp-volume-bar-value:before {
+                        position: absolute;
+                        content: '';
+                        background: white;
+                        width: 5px;
+                        height: 5px;
+                        border: 3px solid #671ecf;
+                        display: block;
+                        right: -5px;
+                        top: 50%;
+                        border-radius: 50%;
+                        -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                        z-index: 1; }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-details {
+                width: 100%;
+                text-align: center;
+                font-size: 12px;
+                color: white;
+                padding-left: 30px;
+                font-family: Furore;
+                margin-bottom: -10px; }
   body .how_is_training .title {
     font-size: 24px; }
   body .how_is_training .sequence {
@@ -5376,6 +4818,180 @@ body {
       transform: translate(-50%, -50%);
       width: 100%;
       height: auto; }
+  body .participants {
+    margin-top: 50px; }
+    body .participants .title {
+      font-size: 18px; }
+    body .participants .participants_slider {
+      margin-top: 30px;
+      width: 88% !important;
+      /*_____СТРЕЛКИ________*/ }
+      body .participants .participants_slider .slick-prev, body .participants .participants_slider .slick-next {
+        height: 40px;
+        width: 40px; }
+        body .participants .participants_slider .slick-prev:before, body .participants .participants_slider .slick-next:before {
+          display: none; }
+      body .participants .participants_slider .slick-prev {
+        left: -18px; }
+      body .participants .participants_slider .slick-next {
+        -webkit-transform: translate(0, -50%) rotate(180deg);
+        transform: translate(0, -50%) rotate(180deg);
+        right: -18px; }
+      body .participants .participants_slider .slick-list .slick-track .slide {
+        width: 100%;
+        height: auto; }
+        body .participants .participants_slider .slick-list .slick-track .slide .participants_section {
+          padding: 10px 5px 10px 5px;
+          border-radius: 50px;
+          width: 256px;
+          height: auto; }
+          body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant {
+            padding-bottom: 10px; }
+            body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .photo {
+              width: 100px;
+              height: 100px; }
+            body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info {
+              margin-top: 10px;
+              text-align: center;
+              color: white; }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .name_and_surname {
+                font-size: 22px;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column; }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .name_and_surname .name {
+                  margin-right: 0; }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .age {
+                margin-top: 6px;
+                font-size: 14px; }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .age span:nth-child(2) {
+                  margin: 0 6px; }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .participant .info .skills {
+                font-size: 14px;
+                margin-top: 6px; }
+          body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer {
+            margin-top: 0;
+            max-width: 100%;
+            width: auto;
+            margin-right: 15px;
+            margin-left: 40px; }
+            body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio {
+              max-width: 100%;
+              border: none;
+              background: transparent;
+              padding: 6px 0;
+              /*название*/ }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio:last-child .jp-type-single {
+                /*звук*/ }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio:last-child .jp-type-single .jp-volume-controls {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex; }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single {
+                /*таймер*/
+                /*звук*/ }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface {
+                  background: transparent;
+                  height: 25px;
+                  margin-right: 30px; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    height: 40px;
+                    position: relative;
+                    /*дорожка*/ }
+                    body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-controls, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-controls {
+                      position: absolute;
+                      width: 95px;
+                      left: -60px; }
+                    body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress {
+                      width: 100%;
+                      background: none;
+                      height: 4px;
+                      cursor: pointer;
+                      border-radius: 5px;
+                      overflow: hidden;
+                      margin-left: 10px; }
+                      body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress .jp-seek-bar, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress .jp-seek-bar {
+                        height: 100%;
+                        width: 100%;
+                        background: white; }
+                        body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-progress .jp-seek-bar .jp-play-bar, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-progress .jp-seek-bar .jp-play-bar {
+                          height: 100%;
+                          background: #671ecf;
+                          border-radius: 0 4px 4px 0; }
+                    body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-gui .jp-controls-holder .jp-toggles, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-interface .jp-controls-holder .jp-toggles {
+                      display: none !important; }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .timers_aud {
+                  margin-left: 13px;
+                  margin-right: 3px;
+                  height: 15px;
+                  max-width: 100%;
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                  justify-content: space-between; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .timers_aud .jp-current-time, body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .timers_aud .jp-duration {
+                    font-size: 9px;
+                    color: white;
+                    font-family: Furore; }
+                body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls {
+                  width: 100%;
+                  display: none;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  margin-top: 10px;
+                  margin-left: 0; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-mute {
+                    color: white;
+                    display: none; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-volume-max {
+                    display: none !important; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .vol_fa_ico {
+                    margin-right: 10px;
+                    color: white; }
+                  body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar {
+                    background: white;
+                    padding: 0;
+                    position: relative;
+                    height: 3px;
+                    width: 100px;
+                    overflow: visible;
+                    cursor: pointer; }
+                    body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar .jp-volume-bar-value {
+                      background: #671ecf;
+                      position: relative;
+                      height: 100%; }
+                      body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar .jp-volume-bar-value:before {
+                        position: absolute;
+                        content: '';
+                        background: white;
+                        width: 5px;
+                        height: 5px;
+                        border: 3px solid #671ecf;
+                        display: block;
+                        right: -5px;
+                        top: 50%;
+                        border-radius: 50%;
+                        -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                        z-index: 1; }
+              body .participants .participants_slider .slick-list .slick-track .slide .participants_section .slider_audioplayer .jp-audio .jp-details {
+                width: 100%;
+                text-align: center;
+                font-size: 10px;
+                color: white;
+                padding-left: 0;
+                font-family: Furore;
+                margin-bottom: -10px; }
   body .how_is_training .title {
     font-size: 24px; }
   body .how_is_training .sequence {
