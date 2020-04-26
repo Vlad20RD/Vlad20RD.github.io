@@ -1475,7 +1475,8 @@ body {
     -ms-flex-align: center;
     align-items: center;
     z-index: 100;
-    display: none; }
+    display: none;
+    background: rgba(0, 0, 0, 0.5); }
     body .modal.op {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1917,7 +1918,16 @@ body {
           -webkit-box-align: center;
           -ms-flex-align: center;
           align-items: center;
-          border-radius: 60px; }
+          border-radius: 60px;
+          position: relative; }
+          body .modal .section_modal .payment_on_time .image:before {
+            position: absolute;
+            content: '';
+            background: rgba(0, 0, 0, 0.4);
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%; }
           body .modal .section_modal .payment_on_time .image img {
             width: 100%;
             height: auto;
